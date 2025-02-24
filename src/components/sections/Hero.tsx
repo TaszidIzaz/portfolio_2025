@@ -159,7 +159,7 @@ const Hero = () => {
               </div>
             </div>
             <div className="overflow-hidden">
-              <div ref={buttonRef} className="w-fit mb-8 flex items-center gap-4">
+              <div ref={buttonRef} className="w-fit mb-8 flex items-center gap-4 max-md:flex-col max-md:w-full max-md:items-start">
                 <a
                   href="#contact"
                   className="inline-block text-md bg-black text-white py-4 px-4 font-semibold rounded-md 
@@ -167,9 +167,9 @@ const Hero = () => {
                     before:absolute before:inset-0 before:bg-white before:translate-x-[-100%] 
                     hover:before:translate-x-0 before:transition-transform before:duration-300
                     hover:text-black transition-colors duration-300 isolate
-                    hover:pl-4 hover:pr-2 group"
+                    hover:pl-4 hover:pr-2 group max-md:text-sm max-md:w-full max-md:text-center"
                 >
-                  <span className="relative z-10 flex items-center gap-2">
+                  <span className="relative z-10 flex items-center gap-2 max-md:justify-center">
                     Let's Discuss Your Project
                     <svg 
                       className="w-0 h-5 transition-all duration-300 group-hover:w-5" 
@@ -184,7 +184,7 @@ const Hero = () => {
                     </svg>
                   </span>
                 </a>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 max-md:mt-4 max-md:pl-4">
                   <div className="relative flex items-center">
                     <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                     <div className="absolute w-3 h-3 bg-green-500 rounded-full animate-ping"></div>
