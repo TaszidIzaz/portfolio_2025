@@ -13,7 +13,10 @@ const WorkDetailContent = ({ workId }: WorkDetailContentProps) => {
   const { prev, next } = getAdjacentWorks(workId);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      behavior: 'instant'
+    });
   }, [workId]);
 
   if (!work) {
@@ -44,12 +47,12 @@ const WorkDetailContent = ({ workId }: WorkDetailContentProps) => {
   return (
     <article className="py-10">
       {/* Breadcrumb Navigation */}
-      <div className="flex items-center gap-2 mb-16 text-sm">
+      <div className="flex items-start flex-wrap gap-2 mb-16 text-sm">
         <Link to="/" className="hover:opacity-70 transition-opacity">Home</Link>
-        <ChevronRight size={14} />
+        <ChevronRight size={14} className="mt-1" />
         <Link to="/works" className="hover:opacity-70 transition-opacity">Works</Link>
-        <ChevronRight size={14} />
-        <span className="text-gray-500">{work.title}</span>
+        <ChevronRight size={14} className="mt-1" />
+        <span className="text-gray-500 break-all">{work.title}</span>
       </div>
 
       {/* Header Section */}
@@ -233,6 +236,7 @@ const WorkDetailContent = ({ workId }: WorkDetailContentProps) => {
           <Link
             to={`/works/${prev.id}`}
             className="group relative overflow-hidden block"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}
           >
             <img
               src={prev.image}
@@ -251,6 +255,7 @@ const WorkDetailContent = ({ workId }: WorkDetailContentProps) => {
           <Link
             to={`/works/${next.id}`}
             className="group relative overflow-hidden block"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}
           >
             <img
               src={next.image}
