@@ -117,7 +117,7 @@ const Hero2 = () => {
               max-lg:text-[42px] max-lg:leading-[1.3] max-md:text-[32px] max-sm:text-[28px] max-sm:leading-[1.3]"
           >
             <span className="max-md:hidden">{'\u00A0'.repeat(23)}</span>
-            I love turning complex ideas into simple solutions, with humans at the heart of each of the{' '}
+            I love turning complex ideas into simple solutions, with humans at the heart of each{' '}
             <span className="inline-block relative">
               <span className="inline-block h-[62.4px] overflow-hidden relative top-[14px] left-[6px] max-sm:h-[42px] max-sm:top-[8px] max-sm:left-[4px]">
                 <span ref={titleRef} className="inline-block font-normal">

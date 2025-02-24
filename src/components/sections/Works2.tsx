@@ -3,7 +3,7 @@ import WorkCard from "../ui/WorkCard";
 import { Link } from 'react-router-dom';
 import { works } from "@/data/works";
 
-const Works = () => {
+const Works2 = () => {
   return (
     <section className="py-[60px] max-md:py-10">
       <div className="mb-16">
@@ -73,18 +73,9 @@ const Works = () => {
           </div>
         ))}
       </div>
-      <div className="flex justify-center mt-16">
-        <Link to="/works" className="group inline-flex items-center gap-3">
-          <span className="text-xl font-medium text-[#181818] group-hover:opacity-80 transition-opacity relative after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-[2px] after:bg-[#181818] after:origin-left after:scale-x-0 group-hover:after:scale-x-100 after:transition-transform after:duration-300 group-hover:after:origin-left after:origin-right">
-            See All
-          </span>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-[#181818] group-hover:translate-x-1 transition-transform">
-            <path d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z" fill="currentColor"/>
-          </svg>
-        </Link>
-      </div>
+      
     </section>
   );
 };
 
-export default Works;
+export default Works2;

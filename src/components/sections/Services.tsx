@@ -30,6 +30,50 @@ const Services = () => {
       </div>
 
       <div className="mt-8 md:mt-16 space-y-16 md:space-y-32">
+        {/* Product Design */}
+        <div className="flex flex-col md:flex-row gap-8 md:gap-20 items-start">
+          <div className="w-full md:w-[40%] aspect-square bg-[#F3F3F3] rounded-lg overflow-hidden">
+            <img 
+              src="/images/work3.jpg" 
+              alt="Product Design"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="flex-1">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 flex items-center justify-between">
+              Product Design
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-[#181818] max-md:hidden">
+                
+              </svg>
+            </h2>
+            <p className="text-[#666] text-base md:text-lg mb-8 md:mb-12">
+              A well-designed website has the power to captivate, engage and elevate your brand. I specialize in crafting custom-coded sites that are tailored to your unique identity, blending sleek design with seamless functionality.
+            </p>
+            <div className="space-y-4 md:space-y-6">
+              <div>
+                <div className="flex items-center gap-4">
+                  <span className="text-xs md:text-sm text-[#666]">01</span>
+                  <h3 className="text-base md:text-xl font-semibold">UX Research</h3>
+                </div>
+                <div className="h-[1px] bg-[#E5E5E5] w-full mt-4 md:mt-6"></div>
+              </div>
+              <div>
+                <div className="flex items-center gap-4">
+                  <span className="text-xs md:text-sm text-[#666]">02</span>
+                  <h3 className="text-base md:text-xl font-semibold">Product & Competitor Analysis</h3>
+                </div>
+                <div className="h-[1px] bg-[#E5E5E5] w-full mt-4 md:mt-6"></div>
+              </div>
+              <div>
+                <div className="flex items-center gap-4">
+                  <span className="text-xs md:text-sm text-[#666]">03</span>
+                  <h3 className="text-base md:text-xl font-semibold">Design & Launch</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         {/* Website Development */}
         <div className="flex flex-col md:flex-row gap-8 md:gap-20 items-start">
           <div className="w-full md:w-[40%] aspect-square bg-[#F3F3F3] rounded-lg overflow-hidden">
@@ -43,7 +87,7 @@ const Services = () => {
             <h2 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 flex items-center justify-between">
               Website Development
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-[#181818] max-md:hidden">
-                <path d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z" fill="currentColor"/>
+                
               </svg>
             </h2>
             <p className="text-[#666] text-base md:text-lg mb-8 md:mb-12">
@@ -87,7 +131,7 @@ const Services = () => {
             <h2 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 flex items-center justify-between">
               Website Design
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-[#181818] max-md:hidden">
-                <path d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z" fill="currentColor"/>
+                
               </svg>
             </h2>
             <p className="text-[#666] text-base md:text-lg mb-8 md:mb-12">
@@ -118,49 +162,7 @@ const Services = () => {
           </div>
         </div>
 
-        {/* Product Design */}
-        <div className="flex flex-col md:flex-row gap-8 md:gap-20 items-start">
-          <div className="w-full md:w-[40%] aspect-square bg-[#F3F3F3] rounded-lg overflow-hidden">
-            <img 
-              src="/images/work3.jpg" 
-              alt="Product Design"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="flex-1">
-            <h2 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 flex items-center justify-between">
-              Product Design
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-[#181818] max-md:hidden">
-                <path d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z" fill="currentColor"/>
-              </svg>
-            </h2>
-            <p className="text-[#666] text-base md:text-lg mb-8 md:mb-12">
-              A well-designed website has the power to captivate, engage and elevate your brand. I specialize in crafting custom-coded sites that are tailored to your unique identity, blending sleek design with seamless functionality.
-            </p>
-            <div className="space-y-4 md:space-y-6">
-              <div>
-                <div className="flex items-center gap-4">
-                  <span className="text-xs md:text-sm text-[#666]">01</span>
-                  <h3 className="text-base md:text-xl font-semibold">UX Research</h3>
-                </div>
-                <div className="h-[1px] bg-[#E5E5E5] w-full mt-4 md:mt-6"></div>
-              </div>
-              <div>
-                <div className="flex items-center gap-4">
-                  <span className="text-xs md:text-sm text-[#666]">02</span>
-                  <h3 className="text-base md:text-xl font-semibold">Product & Competitor Analysis</h3>
-                </div>
-                <div className="h-[1px] bg-[#E5E5E5] w-full mt-4 md:mt-6"></div>
-              </div>
-              <div>
-                <div className="flex items-center gap-4">
-                  <span className="text-xs md:text-sm text-[#666]">03</span>
-                  <h3 className="text-base md:text-xl font-semibold">Design & Launch</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
   );

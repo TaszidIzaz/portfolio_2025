@@ -1,14 +1,26 @@
+import { ReactNode } from "react";
+
+interface TechStack {
+  name: string;
+  icon: string;
+}
+
+interface SectionContent {
+  heading: string;
+  content: string;
+}
 
 export interface WorkDetails {
   id: string;
   title: string;
   client: string;
-  type: string;
+  type?: string;
   description: {
-    situation: string;
-    task: string;
-    action: string;
-    result: string;
+    overview: ReactNode;
+    situation: SectionContent;
+    task: SectionContent;
+    action: SectionContent;
+    result: SectionContent;
   };
   images: string[];
   content: {
@@ -18,161 +30,205 @@ export interface WorkDetails {
   }[];
   year: string;
   image: string;
-  tags: string[]; // Added tags property
+  tags: string[];
+  stack?: TechStack[];
+  industry?: string[];
+  liveUrl?: string;
 }
 
 export const works: WorkDetails[] = [
   {
-    id: "arbok-furnitures",
-    title: "Arbok Furnitures",
-    client: "Arbok Inc.",
-    type: "Product Design, Website",
-    tags: ["UI/UX", "Web Design", "E-commerce"], // Added tags
+    id: "algorizin-opt",
+    title: "Transforming Self-Employment for International Students with Algorizin OPT",
+    client: "Algorizin",
+    year: "2024",
     description: {
-      situation: "Arbok Furnitures needed a complete digital transformation to compete in the modern furniture market.",
-      task: "Design and develop a user-friendly e-commerce platform that showcases their premium furniture collection.",
-      action: "Created a minimalist design system and implemented a seamless shopping experience with 3D product previews.",
-      result: "Increased online sales by 150% within the first quarter of launch."
+      overview: "Led the end-to-end design and development of a groundbreaking platform that simplifies the OPT self-employment process for international students. By merging legal compliance with an intuitive user experience, the platform empowers students to establish self-employed businesses without the risks of non-compliance or procedural missteps.",
+      situation: {
+        heading: "Complex OPT Self-Employment Process",
+        content: `International students looking to pursue self-employment under OPT (Optional Practical Training) face a highly complex and often confusing set of USCIS regulations. Many struggle with:
+
+• Unclear eligibility criteria and documentation requirements.
+• Risk of visa complications due to improper filings or missing paperwork.
+• Lack of accessible, structured guidance on legal business formation.
+• Manual and inefficient processes that lead to delays and compliance risks.
+
+Without a streamlined system in place, students often resort to unreliable sources for information, putting their immigration status in jeopardy. Algorizin identified this critical gap and sought to create a comprehensive, user-friendly solution to bridge it.`
+      },
+      task: {
+        heading: "Building a Compliant Self-Employment Platform",
+        content: `The goal was to design an intuitive and scalable platform that:
+
+✔ Simplifies the end-to-end OPT self-employment process.
+✔ Ensures full USCIS compliance by integrating automated document generation and legal guidance.
+✔ Provides a clear, structured pathway to help users register and manage their self-employment efficiently.
+✔ Incorporates expert consultations to guide students through legal and financial complexities.
+✔ Implements a strategic revenue model while maintaining accessibility for international students.
+
+The platform needed to balance ease of use, legal accuracy, and commercial sustainability, making it a game-changer in the legal tech and immigration space.`
+      },
+      action: {
+        heading: "Comprehensive Platform Development",
+        content: `To bring this vision to life, I led the product design and UX research, ensuring that every aspect of the platform was built for clarity, efficiency, and compliance. Key initiatives included:
+
+  • End-to-End User Experience Design: Crafted a seamless and self-guided onboarding process with step-by-step assistance, reducing friction and confusion
+  • Automated Document Generation: Integrated auto-populated legal documents to streamline compliance and minimize user errors
+  • Real-Time Status Tracking: Developed a dashboard that provides students with updates on their business formation progress, next steps, and compliance status
+  • Expert Consultation Access: Built a booking system that allows students to connect with legal advisors and mentors directly through the platform
+  • Strategic Monetization Model: Implemented a tiered payment system—offering free initial guidance while monetizing expert consultations and premium services
+  • Optimized for Accessibility & Growth: Designed a mobile-friendly, scalable system to accommodate the increasing number of users across different regions`
+      },
+      result: {
+        heading: "Empowering International Students",
+        content: `The platform saw significant adoption and revenue growth, proving its effectiveness in addressing a critical need.
+
+• Increased platform adoption, successfully onboarding hundreds of international students in the first few months
+• Helped users establish legally compliant self-employment businesses, leading to an impressive approval rate
+• Strengthened user trust and engagement, positioning Algorizin as a leading solution for self-employed OPT students
+
+By transforming a once-complicated process into an accessible, automated, and compliant solution, Algorizin OPT has empowered thousands of students to take control of their career paths—without the fear of immigration risks.`
+      }
     },
+    image: "/images/works/Alghero.jpg",
     images: [
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/327f7b17c883dede46ac55d37247dd32ed21d0b7",
-      "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-      "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-      "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+      "/images/works/Alghero.jpg",    // Hero image
+      "/images/works/Alg1.jpg",              // Situation - Full width
+      "/images/works/Alg2.jpg",              // Situation - Split left
+      "/images/works/Alg3.jpg",              // Situation - Split right
+      "/images/works/Alg4.jpg",        // Task - Full width
+      "/images/works/Alg5.jpg",        // Task - Split left
+      "/images/works/Alg6.jpg",        // Task - Split right
+      "/images/works/Alg7.jpg",      // Action - Full width
+      "/images/works/Alg8.jpg",      // Action - Split left
+      "/images/works/Alg9.jpg",      // Action - Split right
     ],
-    content: [
+    tags: ["Product Design", "Web Development", "UX Research"],
+    stack: [
+
       {
-        type: "text",
-        content: "The project began with extensive market research and competitor analysis to identify gaps in the online furniture retail space.",
-        index: 1
+        name: "Figma",
+        icon: "/icons/Figma.svg"
       },
       {
-        type: "image",
-        content: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-        index: 2
-      },
-      {
-        type: "text",
-        content: "We developed a comprehensive design system that emphasized the premium quality of Arbok's furniture while maintaining accessibility.",
-        index: 3
-      },
-      {
-        type: "image",
-        content: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-        index: 4
-      },
-      {
-        type: "text",
-        content: "The implementation phase focused on creating a seamless user experience with intuitive navigation and fast load times.",
-        index: 5
-      },
-      {
-        type: "image",
-        content: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-        index: 6
-      },
-      {
-        type: "text",
-        content: "Post-launch analytics showed significant improvements in user engagement and conversion rates.",
-        index: 7
-      },
-      {
-        type: "image",
-        content: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-        index: 8
+        name: "ClickUp",
+        icon: "/icons/Clickup.svg"
       }
     ],
-    year: "2024",
-    image: "https://cdn.builder.io/api/v1/image/assets/TEMP/327f7b17c883dede46ac55d37247dd32ed21d0b7"
+    industry: ["Legal Tech", "Education", "Immigration"],
+    liveUrl: "https://algorizin.com",
+    content: [/* ... content blocks ... */]
   },
   {
-    id: "arbok-furnitures-2",
-    title: "Digital Marketing Campaign",
-    client: "Tech Solutions Ltd",
-    type: "Digital Marketing, Social Media",
-    tags: ["Digital Marketing", "Social Media", "Content Strategy"], // Added tags
+    id: "profyl-ai",
+    title: "Building Profyl.ai from the Ground Up – A New Era of Job Matching",
+    client: "Profyl.ai",
+    year: "2024",
     description: {
-      situation: "Tech Solutions needed to increase their market presence and lead generation.",
-      task: "Develop and execute a comprehensive digital marketing strategy across multiple platforms.",
-      action: "Implemented targeted social media campaigns, content marketing, and email marketing initiatives.",
-      result: "Generated 200% more qualified leads and increased social media engagement by 300%."
+      overview: "Designed and developed an AI-powered job matching platform that revolutionizes how job seekers and employers connect, using advanced machine learning algorithms for precise matches.",
+      situation: {
+        heading: "Inefficient Job Matching",
+        content: "Traditional job platforms failed to effectively match candidates with suitable positions, resulting in wasted time and resources for both parties."
+      },
+      task: {
+        heading: "AI-Powered Job Platform",
+        content: "Build an intelligent platform that leverages AI to create more accurate job matches while providing a seamless user experience."
+      },
+      action: {
+        heading: "Innovative Algorithm Development",
+        content: "Created an innovative matching algorithm and intuitive interface that analyzes multiple data points to generate highly relevant job recommendations."
+      },
+      result: {
+        heading: "Improved Hiring Efficiency",
+        content: "Achieved an 85% successful match rate, reducing hiring time by 60% for partner companies."
+      }
     },
+    image: "/images/works/profyl-hero.jpg",
     images: [
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/a4a2ba1f405bb86e1b8ec16f3324118b0be722a4",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
-      "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a",
-      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3"
+      "/images/works/profyl-hero.jpg",       // Hero image
+      "/images/works/profyl-situation-1.jpg", // Situation - Full width
+      "/images/works/profyl-situation-2.jpg", // Situation - Split left
+      "/images/works/profyl-situation-3.jpg", // Situation - Split right
+      "/images/works/profyl-task-1.jpg",     // Task - Full width
+      "/images/works/profyl-task-2.jpg",     // Task - Split left
+      "/images/works/profyl-task-3.jpg",     // Task - Split right
+      "/images/works/profyl-action-1.jpg",   // Action - Full width
+      "/images/works/profyl-action-2.jpg",   // Action - Split left
+      "/images/works/profyl-action-3.jpg",   // Action - Split right
     ],
-    content: [
+    tags: ["AI/ML", "Product Design", "Full-Stack Development", "UX/UI"],
+    stack: [
       {
-        type: "text",
-        content: "Our digital marketing campaign began with a comprehensive analysis of the target audience and market trends.",
-        index: 1
+        name: "Python",
+        icon: "/icons/python.svg"
       },
       {
-        type: "image",
-        content: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
-        index: 2
+        name: "TensorFlow",
+        icon: "/icons/tensorflow.svg"
       },
       {
-        type: "text",
-        content: "We developed highly targeted content strategies for different social media platforms to maximize engagement.",
-        index: 3
-      },
-      {
-        type: "image",
-        content: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a",
-        index: 4
+        name: "Next.js",
+        icon: "/icons/nextjs.svg"
       }
     ],
-    year: "2024",
-    image: "https://cdn.builder.io/api/v1/image/assets/TEMP/a4a2ba1f405bb86e1b8ec16f3324118b0be722a4"
+    industry: ["HR Tech", "Artificial Intelligence", "Recruitment"],
+    liveUrl: "https://profyl.ai",
+    content: [/* ... content blocks ... */]
   },
   {
-    id: "laperitif-reinvented",
-    title: "Brand Identity Refresh",
-    client: "Laperitif Restaurant",
-    type: "Branding, Design",
-    tags: ["Branding", "Visual Design", "Identity"], // Added tags
+    id: "fizclo-ecommerce",
+    title: "Revolutionizing E-Commerce with AI-Powered Personalization in FIZCLO",
+    client: "FIZCLO",
+    year: "2024",
     description: {
-      situation: "Laperitif Restaurant needed to modernize their brand while maintaining their heritage.",
-      task: "Create a refreshed brand identity that appeals to a younger audience while respecting the brand's history.",
-      action: "Developed a new visual identity system including logo, color palette, and brand guidelines.",
-      result: "Successfully attracted 40% more millennial customers while retaining 95% of existing clientele."
+      overview: "Transformed the online shopping experience through AI-driven personalization, helping FIZCLO achieve unprecedented customer engagement and sales growth.",
+      situation: {
+        heading: "Generic Shopping Experience",
+        content: "FIZCLO struggled with generic product recommendations and high cart abandonment rates in their e-commerce platform."
+      },
+      task: {
+        heading: "Personalized Shopping System",
+        content: "Implement an AI-powered personalization system that delivers tailored shopping experiences to each customer."
+      },
+      action: {
+        heading: "Smart Recommendation Engine",
+        content: "Developed a sophisticated recommendation engine and personalized user interface that adapts to individual shopping patterns."
+      },
+      result: {
+        heading: "Significant Growth Metrics",
+        content: "Increased conversion rates by 45% and customer retention by 60% within the first quarter of implementation."
+      }
     },
+    image: "/images/works/fizclo-hero.jpg",
     images: [
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/ef6ecfa73defbafca1fe891a3cde22881c099598",
-      "https://images.unsplash.com/photo-1606836591695-4d58a73fac94",
-      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0",
-      "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c"
+      "/images/works/fizclo-hero.jpg",       // Hero image
+      "/images/works/fizclo-situation-1.jpg", // Situation - Full width
+      "/images/works/fizclo-situation-2.jpg", // Situation - Split left
+      "/images/works/fizclo-situation-3.jpg", // Situation - Split right
+      "/images/works/fizclo-task-1.jpg",     // Task - Full width
+      "/images/works/fizclo-task-2.jpg",     // Task - Split left
+      "/images/works/fizclo-task-3.jpg",     // Task - Split right
+      "/images/works/fizclo-action-1.jpg",   // Action - Full width
+      "/images/works/fizclo-action-2.jpg",   // Action - Split left
+      "/images/works/fizclo-action-3.jpg",   // Action - Split right
     ],
-    content: [
+    tags: ["E-commerce", "AI Integration", "UX Design", "Frontend Development"],
+    stack: [
       {
-        type: "text",
-        content: "The brand refresh process started with extensive research into current restaurant branding trends and customer preferences.",
-        index: 1
+        name: "Vue.js",
+        icon: "/icons/vue.svg"
       },
       {
-        type: "image",
-        content: "https://images.unsplash.com/photo-1606836591695-4d58a73fac94",
-        index: 2
+        name: "AWS",
+        icon: "/icons/aws.svg"
       },
       {
-        type: "text",
-        content: "We carefully balanced modern design elements with traditional aspects to create a timeless yet contemporary look.",
-        index: 3
-      },
-      {
-        type: "image",
-        content: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0",
-        index: 4
+        name: "PostgreSQL",
+        icon: "/icons/postgresql.svg"
       }
     ],
-    year: "2024",
-    image: "https://cdn.builder.io/api/v1/image/assets/TEMP/ef6ecfa73defbafca1fe891a3cde22881c099598"
+    industry: ["E-commerce", "Retail", "Fashion Tech"],
+    liveUrl: "https://fizclo.com",
+    content: [/* ... content blocks ... */]
   }
 ];
 

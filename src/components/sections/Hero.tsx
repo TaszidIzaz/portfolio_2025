@@ -162,9 +162,27 @@ const Hero = () => {
               <div ref={buttonRef} className="w-fit mb-8 flex items-center gap-4">
                 <a
                   href="#contact"
-                  className="inline-block text-md bg-black text-white py-4 px-4 font-semibold rounded-md hover:bg-gray-800 transition-colors"
+                  className="inline-block text-md bg-black text-white py-4 px-4 font-semibold rounded-md 
+                    relative overflow-hidden border border-transparent hover:border-black transition-all
+                    before:absolute before:inset-0 before:bg-white before:translate-x-[-100%] 
+                    hover:before:translate-x-0 before:transition-transform before:duration-300
+                    hover:text-black transition-colors duration-300 isolate
+                    hover:pl-4 hover:pr-2 group"
                 >
-                  Let's Discuss Your Project
+                  <span className="relative z-10 flex items-center gap-2">
+                    Let's Discuss Your Project
+                    <svg 
+                      className="w-0 h-5 transition-all duration-300 group-hover:w-5" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path 
+                        d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z" 
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </span>
                 </a>
                 <div className="flex items-center gap-2">
                   <div className="relative flex items-center">

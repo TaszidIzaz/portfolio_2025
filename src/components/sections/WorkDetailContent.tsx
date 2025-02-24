@@ -21,60 +21,191 @@ const WorkDetailContent = ({ workId }: WorkDetailContentProps) => {
     return <div className="text-center py-20">Work not found</div>;
   }
 
+  const renderContent = (content: string) => {
+    const parts = content.split('\n\n');
+    return parts.map((part, index) => {
+      if (part.includes('•') || part.includes('✔') || part.includes('🚀') || part.includes('✅') || part.includes('💰') || part.includes('📈')) {
+        const [intro, ...points] = part.split(/[•✔🚀✅💰📈]/);
+        return (
+          <div key={index}>
+            {intro && <p className="mb-4">{intro}</p>}
+            <ul className="list-disc pl-6 my-4 space-y-2">
+              {points.map((point, i) => (
+                <li key={i}>{point.trim()}</li>
+              ))}
+            </ul>
+          </div>
+        );
+      }
+      return <p key={index} className="mb-4">{part}</p>;
+    });
+  };
+
   return (
     <article className="py-10">
-      {/* Breadcrumb */}
-      <nav className="flex items-center gap-2 text-sm text-gray-500 mb-10">
-        <Link to="/" className="hover:text-black transition-colors">
-          Home
-        </Link>
-        <ChevronRight className="w-4 h-4" />
-        <Link to="/works" className="hover:text-black transition-colors">
-          Works
-        </Link>
-        <ChevronRight className="w-4 h-4" />
-        <span className="text-black">{work.title}</span>
-      </nav>
+      {/* Breadcrumb Navigation */}
+      <div className="flex items-center gap-2 mb-16 text-sm">
+        <Link to="/" className="hover:opacity-70 transition-opacity">Home</Link>
+        <ChevronRight size={14} />
+        <Link to="/works" className="hover:opacity-70 transition-opacity">Works</Link>
+        <ChevronRight size={14} />
+        <span className="text-gray-500">{work.title}</span>
+      </div>
 
-      {/* Header */}
-      <header className="mb-20">
-        <h1 className="text-5xl font-bold mb-10">{work.title}</h1>
-        <div className="grid grid-cols-2 gap-10 max-md:grid-cols-1">
+      {/* Header Section */}
+      <div className="grid grid-cols-[300px,1fr] gap-24 mb-20 max-md:grid-cols-1 max-md:gap-10">
+        {/* Left Column - Project Info */}
+        <div className="space-y-10">
           <div>
-            <h2 className="text-xl font-semibold mb-2">Client</h2>
-            <p className="text-gray-600">{work.client}</p>
+            <h2 className="text-sm uppercase mb-2 text-gray-500 font-['Mono45_Headline']">CLIENT/OWNER</h2>
+            <p className="text-xl">{work.client}</p>
           </div>
+
           <div>
-            <h2 className="text-xl font-semibold mb-2">Type</h2>
-            <p className="text-gray-600">{work.type}</p>
+            <h2 className="text-sm uppercase mb-2 text-gray-500 font-['Mono45_Headline']">YEAR</h2>
+            <p className="text-xl">{work.year}</p>
           </div>
+
+          <div>
+            <h2 className="text-sm uppercase mb-2 text-gray-500 font-['Mono45_Headline']">SCOPE OF WORK</h2>
+            <div className="flex flex-wrap gap-2">
+              {work.tags?.map((tag, index) => (
+                <span 
+                  key={index}
+                  className="px-3 py-1 text-sm rounded-full bg-gray-100"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {work.stack && work.stack.length > 0 && (
+            <div>
+              <h2 className="text-sm uppercase mb-2 text-gray-500 font-['Mono45_Headline']">STACK</h2>
+              <div className="flex gap-4">
+                {work.stack.map((tech, index) => (
+                  <img 
+                    key={index}
+                    src={tech.icon} 
+                    alt={tech.name}
+                    className="w-6 h-6"
+                  />
+                ))}
+              </div>
+            </div>
+          )}
+
+          {work.industry && work.industry.length > 0 && (
+            <div>
+              <h2 className="text-sm uppercase mb-2 text-gray-500 font-['Mono45_Headline']">INDUSTRY</h2>
+              <div className="flex flex-wrap gap-2">
+                {work.industry.map((item, index) => (
+                  <span 
+                    key={index}
+                    className="text-gray-600"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
-      </header>
 
+        {/* Right Column - Title and Description */}
+        <div>
+          <h1 className="text-5xl font-bold mb-8 leading-tight">{work.title}</h1>
+          <p className="text-xl text-gray-600 mb-8">{work.description.overview}</p>
+          {work.liveUrl && (
+            <a 
+              href={work.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-black hover:opacity-70 transition-opacity"
+            >
+              View live website
+              <span className="ml-2">→</span>
+            </a>
+          )}
+        </div>
+      </div>
+
+      {/* Rest of the component remains the same... */}
       {/* Hero Image */}
       <img
         src={work.images[0]}
         alt={work.title}
-        className="w-full h-[600px] object-cover mb-20"
+        className="w-full h-[600px] object-cover mb-20 max-md:h-[400px]"
       />
 
       {/* STAR Description */}
-      <section className="mb-20 grid gap-10">
-        <div>
-          <h2 className="text-2xl font-semibold mb-4">Situation/Problem</h2>
-          <p className="text-gray-600 leading-relaxed">{work.description.situation}</p>
+      <section className="mb-20 space-y-32">
+        <div className="grid grid-cols-[200px,1fr] gap-20 max-md:grid-cols-1 max-md:gap-6">
+          <h2 className="text-sm uppercase text-gray-500 font-['Mono45_Headline']">THE CHALLENGE</h2>
+          <div>
+            <h3 className="text-3xl font-medium mb-6">{work.description.situation.heading}</h3>
+            <div className="text-gray-600 leading-relaxed text-lg">
+              {renderContent(work.description.situation.content)}
+            </div>
+          </div>
         </div>
-        <div>
-          <h2 className="text-2xl font-semibold mb-4">Task</h2>
-          <p className="text-gray-600 leading-relaxed">{work.description.task}</p>
+
+        {/* Image Grid after Situation */}
+        <div className="space-y-8">
+          <img src={work.images[1]} alt="Process 1" className="w-full h-[600px] object-cover max-md:h-[400px]" />
+          <div className="grid grid-cols-2 gap-8 max-md:grid-cols-1 max-md:gap-4">
+            <img src={work.images[2]} alt="Process 2" className="w-full h-[400px] object-cover max-md:h-[300px]" />
+            <img src={work.images[3]} alt="Process 3" className="w-full h-[400px] object-cover max-md:h-[300px]" />
+          </div>
         </div>
-        <div>
-          <h2 className="text-2xl font-semibold mb-4">Action</h2>
-          <p className="text-gray-600 leading-relaxed">{work.description.action}</p>
+
+        <div className="grid grid-cols-[200px,1fr] gap-20 max-md:grid-cols-1 max-md:gap-6">
+          <h2 className="text-sm uppercase text-gray-500 font-['Mono45_Headline']">THE TASK</h2>
+          <div>
+            <h3 className="text-3xl font-medium mb-6">{work.description.task.heading}</h3>
+            <div className="text-gray-600 leading-relaxed text-lg">
+              {renderContent(work.description.task.content)}
+            </div>
+          </div>
         </div>
-        <div>
-          <h2 className="text-2xl font-semibold mb-4">Result</h2>
-          <p className="text-gray-600 leading-relaxed">{work.description.result}</p>
+
+        {/* Image Grid after Task */}
+        <div className="space-y-8">
+          <img src={work.images[4]} alt="Process 4" className="w-full h-[600px] object-cover max-md:h-[400px]" />
+          <div className="grid grid-cols-2 gap-8 max-md:grid-cols-1 max-md:gap-4">
+            <img src={work.images[5]} alt="Process 5" className="w-full h-[400px] object-cover max-md:h-[300px]" />
+            <img src={work.images[6]} alt="Process 6" className="w-full h-[400px] object-cover max-md:h-[300px]" />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-[200px,1fr] gap-20 max-md:grid-cols-1 max-md:gap-6">
+          <h2 className="text-sm uppercase text-gray-500 font-['Mono45_Headline']">THE ACTION</h2>
+          <div>
+            <h3 className="text-3xl font-medium mb-6">{work.description.action.heading}</h3>
+            <div className="text-gray-600 leading-relaxed text-lg">
+              {renderContent(work.description.action.content)}
+            </div>
+          </div>
+        </div>
+
+        {/* Image Grid after Action */}
+        <div className="space-y-8">
+          <img src={work.images[7]} alt="Process 7" className="w-full h-[600px] object-cover max-md:h-[400px]" />
+          <div className="grid grid-cols-2 gap-8 max-md:grid-cols-1 max-md:gap-4">
+            <img src={work.images[8]} alt="Process 8" className="w-full h-[400px] object-cover max-md:h-[300px]" />
+            <img src={work.images[9]} alt="Process 9" className="w-full h-[400px] object-cover max-md:h-[300px]" />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-[200px,1fr] gap-20 max-md:grid-cols-1 max-md:gap-6">
+          <h2 className="text-sm uppercase text-gray-500 font-['Mono45_Headline']">THE RESULT</h2>
+          <div>
+            <h3 className="text-3xl font-medium mb-6">{work.description.result.heading}</h3>
+            <div className="text-gray-600 leading-relaxed text-lg">
+              {renderContent(work.description.result.content)}
+            </div>
+          </div>
         </div>
       </section>
 

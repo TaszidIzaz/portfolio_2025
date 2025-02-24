@@ -47,7 +47,7 @@ const Header = () => {
           to="/"
           className="text-[28px] font-bold text-black tracking-[-0.56px]"
         >
-          Taszid
+          Taszid Izaz
         </Link>
   
   

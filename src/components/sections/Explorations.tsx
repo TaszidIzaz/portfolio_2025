@@ -114,7 +114,7 @@ const Explorations = () => {
                 </div>
               </div>
             </Link>
-            <div className="flex justify-between items-center px-2">
+            <div className="flex justify-between items-center px-0">
               <Link to={`/explorations/${project.id}`} className="hover:opacity-80 transition-opacity">
                 <h3 className="text-xl font-medium">{project.title}</h3>
               </Link>

@@ -1,17 +1,46 @@
+import { useRef, useEffect } from 'react';
+import { gsap } from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import SplitType from 'split-type';
+
+gsap.registerPlugin(ScrollTrigger);
+
 const Footer = () => {
+  const container = useRef();
+  
+  useEffect(() => {
+    const heroText = new SplitType(".footer-name", { types: "chars" });
+    
+    gsap.set(heroText.chars, { y: 400 });
+    
+    gsap.to(heroText.chars, {
+      y: 0,
+      duration: 1,
+      stagger: 0.025,
+      ease: "power4.out",
+      delay: 0.2,
+      scrollTrigger: {
+        trigger: container.current,
+        start: "top bottom",
+        once: true
+      }
+    });
+  }, []);
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <div className="relative">
+    <div className="relative" ref={container}>
       <footer className="bg-white py-10 w-full">
         <h2 
-          className="font-black leading-none text-[#181818] text-center mb-10 whitespace-nowrap"
+          className="footer-name font-black leading-none text-[#181818] text-center mb-10 whitespace-nowrap"
           style={{ fontSize: "16vw" }}
         >
           Taszid Izaz
-        </h2> 
+        </h2>
+        
         <div className="flex justify-between items-center max-w-screen-xl mx-auto my-0 pt-3 pb-8 px-16 max-sm:flex-wrap max-sm:gap-y-8 max-sm:gap-x-12 max-sm:justify-center">
           <a
             href="https://linkedin.com"
