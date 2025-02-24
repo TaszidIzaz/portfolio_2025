@@ -3,64 +3,78 @@ import { Link } from 'react-router-dom';
 const explorations = [
   {
     id: 1,
-    title: "AI-Powered Design System",
+    title: "Minimal Portfolio Website",
     image: "/images/explorations/project1.jpg",
     date: "Dec 2023"
   },
   {
     id: 2,
-    title: "3D Product Configurator",
+    title: "Client Outsourcing Portal Design",
     image: "/images/explorations/project2.jpg",
     date: "Nov 2023"
   },
   {
     id: 3,
-    title: "Motion Design Experiments",
+    title: "Nuclino Creative Agency Website",
     image: "/images/explorations/project3.jpg",
     date: "Oct 2023"
   },
   {
     id: 4,
-    title: "Interactive Data Visualization",
+    title: "Rentyard Website Design",
     image: "/images/explorations/project4.jpg",
     date: "Sep 2023"
   },
   {
     id: 5,
-    title: "AR Shopping Experience",
+    title: "CRM Software Website Design",
     image: "/images/explorations/project5.jpg",
     date: "Aug 2023"
   },
   {
     id: 6,
-    title: "Voice UI Prototypes",
-    image: "/images/explorations/project6.jpg",
+    title: "Magma Website Development",
+    image: "/images/explorations/project6.png",
     date: "Jul 2023"
   },
   {
     id: 7,
-    title: "Generative Art Series",
-    image: "/images/explorations/project7.jpg",
+    title: "Atis Website Development",
+    image: "/images/explorations/project7.png",
     date: "Jun 2023"
   },
   {
     id: 8,
-    title: "Micro-interactions Library",
-    image: "/images/explorations/project8.jpg",
+    title: "Cloudly Healthcare App Case Study",
+    image: "/images/explorations/project8.png",
     date: "May 2023"
   },
   {
     id: 9,
-    title: "Design System Components",
-    image: "/images/explorations/project9.jpg",
+    title: "DUO Agency Website Development",
+    image: "/images/explorations/project9.png",
     date: "Apr 2023"
   },
   {
     id: 10,
-    title: "WebGL Experiments",
-    image: "/images/explorations/project10.jpg",
+    title: "Remeal Mobile App Case Study",
+    image: "/images/explorations/project10.png",
     date: "Mar 2023"
-  }
+  },
+  {
+    id: 11,
+    title: "3D Pixelated Design",
+    image: "/images/explorations/project11.png",
+    date: "May 2023"
+  },
+  ,
+  {
+    id: 12,
+    title: "Three JS Space Exploration",
+    image: "/images/explorations/project15.jpg",
+    date: "May 2023"
+  },
+  
 ];
 
 const Explorations = () => {
@@ -91,7 +105,7 @@ const Explorations = () => {
           </text>
         </svg>
       </div>
-      <div className="grid grid-cols-2 gap-6 max-w-screen-xl mx-auto my-10 max-md:grid-cols-1">
+      <div className="grid grid-cols-2 gap-16 max-w-screen-xl mx-auto my-10 max-md:grid-cols-1">
         {explorations.map((project, index) => (
           <div key={project.id} className="space-y-3">
             <Link to={`/explorations/${project.id}`} className="block">
@@ -100,7 +114,7 @@ const Explorations = () => {
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
                 />
                 {/* Arrow Icon */}
                 <div className="absolute top-6 right-6 z-20 opacity-0 translate-x-10 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500">

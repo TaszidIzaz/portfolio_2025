@@ -11,29 +11,32 @@ import Contact from "./pages/Contact";
 import WorkDetail from "./pages/WorkDetail";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/layout/Layout";
+import { HelmetProvider } from 'react-helmet-async';
 
 const queryClient = new QueryClient();
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <BrowserRouter>
-          <Routes>
-            <Route element={<Layout />}>
-              <Route index element={<Index />} />
-              <Route path="about" element={<About />} />
-              <Route path="works" element={<Works />} />
-              <Route path="works/:workId" element={<WorkDetail />} />
-              <Route path="contact" element={<Contact />} />
-              <Route path="*" element={<NotFound />} />
-            </Route>
-          </Routes>
-          <Toaster />
-          <Sonner />
-        </BrowserRouter>
-      </TooltipProvider>
-    </QueryClientProvider>
+    <HelmetProvider>
+      <QueryClientProvider client={queryClient}>
+        <TooltipProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route element={<Layout />}>
+                <Route index element={<Index />} />
+                <Route path="about" element={<About />} />
+                <Route path="works" element={<Works />} />
+                <Route path="works/:workId" element={<WorkDetail />} />
+                <Route path="contact" element={<Contact />} />
+                <Route path="*" element={<NotFound />} />
+              </Route>
+            </Routes>
+            <Toaster />
+            <Sonner />
+          </BrowserRouter>
+        </TooltipProvider>
+      </QueryClientProvider>
+    </HelmetProvider>
   );
 }
 

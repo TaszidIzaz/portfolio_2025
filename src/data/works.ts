@@ -40,7 +40,7 @@ export interface WorkDetails {
 export const works: WorkDetails[] = [
   {
     id: "algorizin-opt",
-    title: "Transforming Self-Employment for International Students with Algorizin OPT",
+    title: "Algorizin OPT – Empowering International Students with Self-Employment",
     client: "Algorizin",
     year: "2024",
     description: {
@@ -121,7 +121,7 @@ By transforming a once-complicated process into an accessible, automated, and co
   },
   {
     id: "profyl-ai",
-    title: "Revolutionizing Recruitment with AI-Powered Talent Matching – Profyl.ai",
+    title: "Profyl.ai – Smarter, Faster AI-Powered Hiring",
     client: "Profyl.ai",
     year: "2024",
     description: {
@@ -173,7 +173,7 @@ By leveraging AI and automation, Profyl.ai is redefining the future of recruitme
     },
     image: "/images/works/profhero.jpg",
     images: [
-      "/images/works/profyl-hero.jpg",       // Hero image
+      "/images/works/profhero.jpg",       // Hero image
       "/images/works/pro1.jpg", // Situation - Full width
       "/images/works/pro2.jpg", // Situation - Split left
       "/images/works/pro3.jpg", // Situation - Split right
@@ -202,12 +202,161 @@ By leveraging AI and automation, Profyl.ai is redefining the future of recruitme
   },
   {
     id: "fizclo-ecommerce",
-    title: "Revolutionizing E-Commerce with AI-Powered Personalization in FIZCLO",
+    title: "FIZCLO – AI-Driven Personalization for E-Commerce Growth",
     client: "FIZCLO",
     year: "2025",
+    description: {
+      overview: "Transformed the online shopping experience through AI-driven personalization, helping FIZCLO achieve unprecedented customer engagement and sales growth. By implementing advanced machine learning algorithms, we created a highly personalized shopping experience that significantly improved conversion rates and customer satisfaction.",
+      situation: {
+        heading: "Generic Shopping Experience Challenge",
+        content: `In the competitive e-commerce landscape, FIZCLO faced several critical challenges that limited growth and customer engagement:
+
+• High cart abandonment rates due to irrelevant product recommendations
+• Limited customer engagement with generic, one-size-fits-all shopping experiences
+• Inefficient inventory management leading to stockouts and overstock situations
+• Poor conversion rates from traditional marketing approaches
+• Lack of data-driven insights into customer preferences and behaviors
+
+These challenges were causing significant revenue loss and preventing FIZCLO from scaling effectively in the competitive e-commerce market.`
+      },
+      task: {
+        heading: "Building an AI-Powered Shopping Experience",
+        content: `The project aimed to create a sophisticated e-commerce platform that would:
+
+✔ Implement AI-driven personalization to deliver tailored product recommendations
+✔ Develop smart inventory management systems using predictive analytics
+✔ Create an intuitive, responsive user interface that adapts to user behavior
+✔ Build automated marketing campaigns based on customer segments and behaviors
+✔ Integrate real-time analytics for continuous optimization of the shopping experience
+
+The solution needed to balance technical sophistication with user-friendly design while ensuring scalability and performance.`
+      },
+      action: {
+        heading: "Comprehensive E-commerce Transformation",
+        content: `Leading the technical implementation and UX design, we executed a multi-faceted approach:
+
+• AI-Powered Personalization Engine: Developed machine learning algorithms that analyze user behavior and preferences to provide personalized product recommendations
+• Dynamic User Interface: Created an adaptive UI that adjusts layouts and content based on user interactions and preferences
+• Smart Inventory Management: Implemented predictive analytics to optimize stock levels and reduce inventory costs
+• Automated Marketing System: Built a sophisticated marketing automation platform that delivers personalized campaigns across multiple channels
+• Analytics Dashboard: Designed comprehensive analytics tools for tracking KPIs and customer insights
+• Mobile-First Approach: Ensured seamless experience across all devices with responsive design`
+      },
+      result: {
+        heading: "Transformative Business Impact",
+        content: `The implementation delivered exceptional results across key metrics:
+
+• Reduced cart abandonment rate by 35% through personalized recommendations
+• Increased average order value by 45% with AI-powered cross-selling
+• Improved inventory turnover by 60% using predictive analytics
+• Boosted customer retention rate by 50% through personalized experiences
+• Achieved 85% positive feedback on the new user interface
+
+The platform transformation established FIZCLO as a leading example of AI-powered e-commerce innovation, setting new standards for personalized shopping experiences.`
+      }
+    },
+    image: "/images/works/fizhero.jpg",
+    images: [
+      "/images/works/fizhero.jpg",
+      "/images/works/fiz1.jpg",
+      "/images/works/fiz2.jpg",
+      "/images/works/fiz3.jpg",
+      "/images/works/fiz4.jpg",
+      "/images/works/fiz5.jpg",
+      "/images/works/fiz6.jpg",
+      "/images/works/fiz7.jpg",
+      "/images/works/fiz8.jpg",
+      "/images/works/fiz9.jpg",
+    ],
+    tags: ["E-commerce", "AI Integration", "UX Design", "Frontend Development"],
+    stack: [
+      {
+        name: "Vue.js",
+        icon: "/icons/vue.svg"
+      },
+      {
+        name: "TensorFlow",
+        icon: "/icons/tensorflow.svg"
+      },
+      {
+        name: "AWS",
+        icon: "/icons/aws.svg"
+      }
+    ],
+    industry: ["E-commerce", "Retail", "Fashion Tech"],
+    liveUrl: "https://fizclo.com",
+    content: [
+      {
+        type: 'text',
+        content: 'Generic Shopping Experience Challenge',
+        index: 1
+      },
+      {
+        type: 'image',
+        content: '/images/works/fiz1.jpg',
+        index: 2
+      },
+      {
+        type: 'image',
+        content: '/images/works/fiz2.jpg',
+        index: 3
+      },
+      {
+        type: 'image',
+        content: '/images/works/fiz3.jpg',
+        index: 4
+      },
+      {
+        type: 'text',
+        content: 'Building an AI-Powered Shopping Experience',
+        index: 5
+      },
+      {
+        type: 'image',
+        content: '/images/works/fiz4.jpg',
+        index: 6
+      },
+      {
+        type: 'image',
+        content: '/images/works/fiz5.jpg',
+        index: 7
+      },
+      {
+        type: 'image',
+        content: '/images/works/fiz6.jpg',
+        index: 8
+      },
+      {
+        type: 'text',
+        content: 'Comprehensive E-commerce Transformation',
+        index: 9
+      },
+      {
+        type: 'image',
+        content: '/images/works/fiz7.jpg',
+        index: 10
+      },
+      {
+        type: 'image',
+        content: '/images/works/fiz8.jpg',
+        index: 11
+      },
+      {
+        type: 'image',
+        content: '/images/works/fiz9.jpg',
+        index: 12
+      }
+    ]
+  },
+
+  {
+    id: "printee",
+    title: "Printee – AI-Enhanced Print-on-Demand Made Simple",
+    client: "Printee",
+    year: "2024",
     isPrivate: true,
     description: {
-      overview: "Transformed the online shopping experience through AI-driven personalization, helping FIZCLO achieve unprecedented customer engagement and sales growth.",
+      overview: "Led the development of an innovative print-on-demand platform that leverages AI to transform user-generated content into professional-quality designs, while streamlining the production and fulfillment process.",
       situation: {
         heading: "Project Details Under NDA",
         content: "This case study is currently protected under a Non-Disclosure Agreement. The detailed process, specific implementations, and results are confidential to respect our client's privacy and intellectual property."
@@ -225,24 +374,27 @@ By leveraging AI and automation, Profyl.ai is redefining the future of recruitme
         content: ""
       }
     },
-    image: "/images/works/fizhero.jpg",
+    image: "/images/works/printee-hero.jpg",
     images: [
-      "/images/works/fizhero.jpg",    // Only keep hero image
+      "/images/works/printee-hero.jpg",    // Only keep hero image
     ],
-    tags: ["E-commerce", "AI Integration", "UX Design",],
+    tags: ["Print-on-Demand", "AI Integration", "E-commerce", "Product Design"],
     stack: [
-      ,
       {
-        name: "Figma",
-        icon: "/icons/Figma.svg"
+        name: "React",
+        icon: "/icons/react.svg"
       },
       {
-        name: "Vue.js",
-        icon: "/icons/Clickup.svg"
+        name: "Node.js",
+        icon: "/icons/nodejs.svg"
+      },
+      {
+        name: "AWS",
+        icon: "/icons/aws.svg"
       }
     ],
-    industry: ["E-commerce", "Retail", "Fashion Tech"],
-    liveUrl: "https://fizclo.com",
+    industry: ["E-commerce", "Print-on-Demand", "Custom Manufacturing"],
+    liveUrl: "https://printee.co",
     content: [] // Empty content array for private project
   }
 ];
