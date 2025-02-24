@@ -43,7 +43,7 @@ export const works: WorkDetails[] = [
     client: "Algorizin",
     year: "2024",
     description: {
-      overview: "Led the end-to-end design and development of a groundbreaking platform that simplifies the OPT self-employment process for international students. By merging legal compliance with an intuitive user experience, the platform empowers students to establish self-employed businesses without the risks of non-compliance or procedural missteps.",
+      overview: "Led the end-to-end design of a platform that simplifies the OPT self-employment process for international students. By merging legal compliance with an intuitive user experience, the platform empowers students to establish self-employed businesses without the risks of non-compliance or procedural missteps.",
       situation: {
         heading: "Complex OPT Self-Employment Process",
         content: `International students looking to pursue self-employment under OPT (Optional Practical Training) face a highly complex and often confusing set of USCIS regulations. Many struggle with:
@@ -115,7 +115,7 @@ By transforming a once-complicated process into an accessible, automated, and co
       }
     ],
     industry: ["Legal Tech", "Education", "Immigration"],
-    liveUrl: "https://algorizin.com",
+    liveUrl: "https://app.algorizin.com/login",
     content: [/* ... content blocks ... */]
   },
   {
