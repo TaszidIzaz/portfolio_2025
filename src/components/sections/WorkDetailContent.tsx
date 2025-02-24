@@ -118,8 +118,8 @@ const WorkDetailContent = ({ workId }: WorkDetailContentProps) => {
 
         {/* Right Column - Title and Description */}
         <div>
-          <h1 className="text-5xl font-bold mb-8 leading-tight">{work.title}</h1>
-          <p className="text-xl text-gray-600 mb-8">{work.description.overview}</p>
+          <h1 className="text-5xl font-bold mb-8 leading-tight max-md:text-4xl max-sm:text-3xl">{work.title}</h1>
+          <p className="text-xl text-gray-600 mb-8 max-md:text-lg max-sm:text-base">{work.description.overview}</p>
           {work.liveUrl && (
             <a 
               href={work.liveUrl}
