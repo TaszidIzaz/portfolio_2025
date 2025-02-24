@@ -14,9 +14,10 @@ export interface WorkDetails {
   id: string;
   title: string;
   client: string;
-  type?: string;
+  year: string;
+  isPrivate?: boolean; // Add this line
   description: {
-    overview: ReactNode;
+    overview: string;
     situation: SectionContent;
     task: SectionContent;
     action: SectionContent;
@@ -28,7 +29,7 @@ export interface WorkDetails {
     content: string;
     index: number;
   }[];
-  year: string;
+
   image: string;
   tags: string[];
   stack?: TechStack[];
@@ -120,55 +121,80 @@ By transforming a once-complicated process into an accessible, automated, and co
   },
   {
     id: "profyl-ai",
-    title: "Building Profyl.ai from the Ground Up – A New Era of Job Matching",
+    title: "Revolutionizing Recruitment with AI-Powered Talent Matching – Profyl.ai",
     client: "Profyl.ai",
     year: "2024",
     description: {
-      overview: "Designed and developed an AI-powered job matching platform that revolutionizes how job seekers and employers connect, using advanced machine learning algorithms for precise matches.",
+      overview: "Designed and developed a cutting-edge recruitment platform that connects job seekers with recruiters through AI-driven talent matching. By streamlining the hiring process, Profyl.ai bridges the gap between talent discovery and company needs, making recruitment faster, smarter, and more efficient.",
       situation: {
-        heading: "Inefficient Job Matching",
-        content: "Traditional job platforms failed to effectively match candidates with suitable positions, resulting in wasted time and resources for both parties."
+        heading: "The Challenge",
+        content: `The traditional recruitment process is plagued with inefficiencies, making it difficult for both job seekers and recruiters to connect effectively. Key challenges included:
+
+• Recruiters struggling with talent discovery: Sifting through countless resumes manually was time-consuming and often led to missed opportunities.
+• Job seekers facing application fatigue: Applying to multiple jobs with little feedback made the process frustrating and inefficient.
+• Lack of data-driven hiring decisions: Companies relied on outdated methods, leading to mismatched hires and increased turnover.
+• Limited personalization: Existing platforms failed to offer a tailored experience that matches candidates with the right opportunities.
+
+Profyl.ai set out to solve these challenges by creating an AI-driven recruitment ecosystem that simplifies hiring while enhancing candidate-job compatibility.`
       },
       task: {
-        heading: "AI-Powered Job Platform",
-        content: "Build an intelligent platform that leverages AI to create more accurate job matches while providing a seamless user experience."
+        heading: "The Task",
+        content: `The mission was to build an intelligent, scalable, and user-centric recruitment platform that:
+
+✔ Uses AI-driven talent matching to connect job seekers with the most relevant opportunities.
+✔ Optimizes the recruiter workflow by automating job postings, candidate screening, and communication.
+✔ Enhances candidate experience with personalized job recommendations and application tracking.
+✔ Ensures transparency and efficiency in the hiring process, reducing bias and improving decision-making.
+✔ Integrates monetization models to generate sustainable revenue while offering value to both job seekers and recruiters.`
       },
       action: {
-        heading: "Innovative Algorithm Development",
-        content: "Created an innovative matching algorithm and intuitive interface that analyzes multiple data points to generate highly relevant job recommendations."
+        heading: "The Action",
+        content: `As the lead product designer, I focused on delivering an experience that is intuitive, data-driven, and impactful. Key initiatives included:
+
+• AI-Powered Talent Matching: Developed a recommendation system that analyzes candidate profiles and suggests the best job matches, reducing time spent on manual searches.
+• Seamless Job Application Process: Designed a frictionless application flow, allowing users to apply with one click and track their progress effortlessly.
+• Recruiter Dashboard & Analytics: Created a dashboard for recruiters to manage job postings, review applications, and receive AI-driven hiring insights.
+• Smart Candidate Profiling: Implemented dynamic candidate profiles that highlight key skills, experiences, and achievements for recruiters.
+• Integrated Communication Tools: Built an in-app messaging system to facilitate direct conversations between recruiters and candidates.
+• Monetization Strategy: Introduced freemium and premium plans for recruiters, offering advanced AI insights and job promotion options.`
       },
       result: {
-        heading: "Improved Hiring Efficiency",
-        content: "Achieved an 85% successful match rate, reducing hiring time by 60% for partner companies."
+        heading: "The Result",
+        content: `Profyl.ai has transformed the recruitment experience, driving higher engagement and revenue growth.
+
+• Increased platform adoption, with thousands of job seekers and recruiters actively using the platform.
+• Optimized talent matching, reducing time-to-hire by 40% and improving recruiter efficiency.
+• Boosted user retention, as job seekers and recruiters found more value in AI-driven hiring.
+• Achieved revenue growth through premium job postings and subscription-based recruiter plans.
+• Improved hiring outcomes, resulting in higher job placement success rates and better job-candidate matches.
+
+By leveraging AI and automation, Profyl.ai is redefining the future of recruitment—making hiring faster, smarter, and more accessible for all.`
       }
     },
-    image: "/images/works/profyl-hero.jpg",
+    image: "/images/works/profhero.jpg",
     images: [
       "/images/works/profyl-hero.jpg",       // Hero image
-      "/images/works/profyl-situation-1.jpg", // Situation - Full width
-      "/images/works/profyl-situation-2.jpg", // Situation - Split left
-      "/images/works/profyl-situation-3.jpg", // Situation - Split right
-      "/images/works/profyl-task-1.jpg",     // Task - Full width
-      "/images/works/profyl-task-2.jpg",     // Task - Split left
-      "/images/works/profyl-task-3.jpg",     // Task - Split right
-      "/images/works/profyl-action-1.jpg",   // Action - Full width
-      "/images/works/profyl-action-2.jpg",   // Action - Split left
-      "/images/works/profyl-action-3.jpg",   // Action - Split right
+      "/images/works/pro1.jpg", // Situation - Full width
+      "/images/works/pro2.jpg", // Situation - Split left
+      "/images/works/pro3.jpg", // Situation - Split right
+      "/images/works/pro4.jpg",     // Task - Full width
+      "/images/works/pro5.jpg",     // Task - Split left
+      "/images/works/pro6.jpg",     // Task - Split right
+      "/images/works/pro7.jpg",   // Action - Full width
+      "/images/works/pro8.jpg",   // Action - Split left
+      "/images/works/pro9.jpg",   // Action - Split right
     ],
     tags: ["AI/ML", "Product Design", "Full-Stack Development", "UX/UI"],
     stack: [
       {
         name: "Python",
-        icon: "/icons/python.svg"
+        icon: "/icons/Figma.svg"
       },
       {
         name: "TensorFlow",
-        icon: "/icons/tensorflow.svg"
+        icon: "/icons/Clickup.svg"
       },
-      {
-        name: "Next.js",
-        icon: "/icons/nextjs.svg"
-      }
+      
     ],
     industry: ["HR Tech", "Artificial Intelligence", "Recruitment"],
     liveUrl: "https://profyl.ai",
@@ -178,57 +204,46 @@ By transforming a once-complicated process into an accessible, automated, and co
     id: "fizclo-ecommerce",
     title: "Revolutionizing E-Commerce with AI-Powered Personalization in FIZCLO",
     client: "FIZCLO",
-    year: "2024",
+    year: "2025",
+    isPrivate: true,
     description: {
       overview: "Transformed the online shopping experience through AI-driven personalization, helping FIZCLO achieve unprecedented customer engagement and sales growth.",
       situation: {
-        heading: "Generic Shopping Experience",
-        content: "FIZCLO struggled with generic product recommendations and high cart abandonment rates in their e-commerce platform."
+        heading: "Project Details Under NDA",
+        content: "This case study is currently protected under a Non-Disclosure Agreement. The detailed process, specific implementations, and results are confidential to respect our client's privacy and intellectual property."
       },
       task: {
-        heading: "Personalized Shopping System",
-        content: "Implement an AI-powered personalization system that delivers tailored shopping experiences to each customer."
+        heading: "",
+        content: ""
       },
       action: {
-        heading: "Smart Recommendation Engine",
-        content: "Developed a sophisticated recommendation engine and personalized user interface that adapts to individual shopping patterns."
+        heading: "",
+        content: ""
       },
       result: {
-        heading: "Significant Growth Metrics",
-        content: "Increased conversion rates by 45% and customer retention by 60% within the first quarter of implementation."
+        heading: "",
+        content: ""
       }
     },
-    image: "/images/works/fizclo-hero.jpg",
+    image: "/images/works/fizhero.jpg",
     images: [
-      "/images/works/fizclo-hero.jpg",       // Hero image
-      "/images/works/fizclo-situation-1.jpg", // Situation - Full width
-      "/images/works/fizclo-situation-2.jpg", // Situation - Split left
-      "/images/works/fizclo-situation-3.jpg", // Situation - Split right
-      "/images/works/fizclo-task-1.jpg",     // Task - Full width
-      "/images/works/fizclo-task-2.jpg",     // Task - Split left
-      "/images/works/fizclo-task-3.jpg",     // Task - Split right
-      "/images/works/fizclo-action-1.jpg",   // Action - Full width
-      "/images/works/fizclo-action-2.jpg",   // Action - Split left
-      "/images/works/fizclo-action-3.jpg",   // Action - Split right
+      "/images/works/fizhero.jpg",    // Only keep hero image
     ],
-    tags: ["E-commerce", "AI Integration", "UX Design", "Frontend Development"],
+    tags: ["E-commerce", "AI Integration", "UX Design",],
     stack: [
+      ,
+      {
+        name: "Figma",
+        icon: "/icons/Figma.svg"
+      },
       {
         name: "Vue.js",
-        icon: "/icons/vue.svg"
-      },
-      {
-        name: "AWS",
-        icon: "/icons/aws.svg"
-      },
-      {
-        name: "PostgreSQL",
-        icon: "/icons/postgresql.svg"
+        icon: "/icons/Clickup.svg"
       }
     ],
     industry: ["E-commerce", "Retail", "Fashion Tech"],
     liveUrl: "https://fizclo.com",
-    content: [/* ... content blocks ... */]
+    content: [] // Empty content array for private project
   }
 ];
 

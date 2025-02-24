@@ -70,7 +70,7 @@ const FAQ = () => {
         <div className="md:w-1/3">
           <div className="sticky top-8">
             
-            <div className="bg-black text-white rounded-lg p-8 shadow-lg">
+            <div className="bg-[#181818] text-white rounded-lg p-8 shadow-lg">
               {/* <img src="/path-to-your-avatar.jpg" alt="Profile" className="w-12 h-12 rounded-full mb-4" /> */}
               <p className="text-lg mb-20">Didn't find the answer? I'm human being, just like you – ask me anything </p>
               <div className="space-y-3 w-full">
