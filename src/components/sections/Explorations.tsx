@@ -5,76 +5,86 @@ const explorations = [
     id: 1,
     title: "Minimal Portfolio Website",
     image: "/images/explorations/project1.jpg",
-    date: "Dec 2023"
+    date: "Dec 2023",
+    url: "https://taszid-izaz-portfolio.vercel.app/"
   },
   {
     id: 2,
     title: "Client Outsourcing Portal Design",
     image: "/images/explorations/project2.jpg",
-    date: "Nov 2023"
+    date: "Nov 2023",
+    url: "https://dribbble.com/shots/25464641-Client-Outsourcing-Portal-History"
   },
   {
     id: 3,
     title: "Nuclino Creative Agency Website",
     image: "/images/explorations/project3.jpg",
-    date: "Oct 2023"
+    date: "Oct 2023",
+    url: "https://dribbble.com/shots/24850341-Agency-Website-Career-Page"
   },
   {
     id: 4,
     title: "Rentyard Website Design",
     image: "/images/explorations/project4.jpg",
-    date: "Sep 2023"
+    date: "Sep 2023",
+    url: "https://dribbble.com/shots/25182423-RentYard-Apartment-Booking-Details-Page"
   },
   {
     id: 5,
     title: "CRM Software Website Design",
     image: "/images/explorations/project5.jpg",
-    date: "Aug 2023"
+    date: "Aug 2023",
+    url: "https://dribbble.com/shots/25497554-Operations-Software-Website"
   },
   {
     id: 6,
     title: "Magma Website Development",
     image: "/images/explorations/project6.png",
-    date: "Jul 2023"
+    date: "Jul 2023",
+    url: "https://taszidizaz.github.io/magma/"
   },
   {
     id: 7,
     title: "Atis Website Development",
     image: "/images/explorations/project7.png",
-    date: "Jun 2023"
+    date: "Jun 2023",
+    url: "https://agency-seo-tk1p-nz1rkwbxa-taszidizaz.vercel.app/"
   },
   {
     id: 8,
     title: "Cloudly Healthcare App Case Study",
     image: "/images/explorations/project8.png",
-    date: "May 2023"
+    date: "May 2023",
+    url: "https://www.behance.net/gallery/190566089/Cloudly-Health-Companion-App-UX-Case-Study-Showcase"
   },
   {
     id: 9,
     title: "DUO Agency Website Development",
     image: "/images/explorations/project9.png",
-    date: "Apr 2023"
+    date: "Apr 2023",
+    url: "https://duo-agency-website-belj.vercel.app/"
   },
   {
     id: 10,
     title: "Remeal Mobile App Case Study",
     image: "/images/explorations/project10.png",
-    date: "Mar 2023"
+    date: "Mar 2023",
+    url: "https://www.behance.net/gallery/176739353/Remeal-A-Meal-Tracker-App-Case-Study"
   },
   {
     id: 11,
     title: "3D Pixelated Design",
     image: "/images/explorations/project11.png",
-    date: "May 2023"
+    date: "May 2023",
+    url: "https://www.behance.net/gallery/158105909/IUT-Mosque-In-Magicavoxel"
   },
-  ,
   {
     id: 12,
     title: "Three JS Space Exploration",
     image: "/images/explorations/project15.jpg",
-    date: "May 2023"
-  },
-  
+    date: "May 2023",
+    url: "https://github.com/TaszidIzaz/n1"
+  }
 ];
 
 const Explorations = () => {
@@ -108,7 +118,7 @@ const Explorations = () => {
       <div className="grid grid-cols-2 gap-16 max-w-screen-xl mx-auto my-10 max-md:grid-cols-1">
         {explorations.map((project, index) => (
           <div key={project.id} className="space-y-3">
-            <Link to={`/explorations/${project.id}`} className="block">
+            <a href={project.url} target="_blank" rel="noopener noreferrer" className="block">
               <div className="group relative h-[350px] max-md:h-[300px] overflow-hidden cursor-pointer bg-black/5">
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50 z-10 mix-blend-multiply" />
                 <img 
@@ -127,11 +137,11 @@ const Explorations = () => {
                   <span className="text-white text-lg">0{index + 1}</span>
                 </div>
               </div>
-            </Link>
+            </a>
             <div className="flex justify-between items-center px-0">
-              <Link to={`/explorations/${project.id}`} className="hover:opacity-80 transition-opacity">
+              <a href={project.url} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                 <h3 className="text-xl font-medium">{project.title}</h3>
-              </Link>
+              </a>
               <span className="text-base text-gray-600">{project.date}</span>
             </div>
           </div>
