@@ -160,7 +160,7 @@ const Hero2 = () => {
           <div className="w-full flex justify-end mb-40 max-md:justify-start max-md:mb-20">
             <div ref={mainImageRef} className="w-[70%] h-[60vh] relative max-md:w-full max-md:h-[40vh]">
               <img
-                src="/images/work1.jpg"
+                src="/images/p1.jpg"
                 alt="Design Process"
                 className="w-full h-full object-cover rounded-lg"
               />
@@ -197,7 +197,7 @@ const Hero2 = () => {
                 </div>
                 <div className="h-[280px] mt-auto mb-8 max-md:mt-4">
                   <img
-                    src="/images/work2.jpg"
+                    src="/images/p3.jpeg"
                     alt="About Me"
                     className="w-full h-full object-cover rounded-lg"
                   />

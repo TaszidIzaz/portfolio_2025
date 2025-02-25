@@ -4,49 +4,49 @@ const Testimonials = () => {
   const scrollContainerRef = useRef(null);
   
   const testimonials = [
+  
     {
-      quote: "Taszid is an excellent guy for attracting and retaining staff. Its flexibility and autonomy are a perfect match for the needs of agents and employees!",
-      name: "Siam Hossain",
-      role: "CEO and Founder",
-      company: "Algorizin"
-    },
-
-    {
-        quote: "Taszid is an excellent guy for attracting and retaining staff. Its flexibility and autonomy are a perfect match for the needs of agents and employees!",
-        name: "Siam Hossain",
-        role: "CEO and Founder",
-        company: "Algorizin"
+        quote: "Taszid blends creativity with strategic design thinking, delivering functional, user-centered experiences. His proactive approach, adaptability, and teamwork make him an invaluable addition to any organization.",
+        name: "Toukir Tasnim Chowdhury",
+        role: "Product Manager",
+        company: "Algorizin",
+        logo: "/images/testimonials/algorizin.png" 
       },
       {
-        quote: "Taszid is an excellent guy for attracting and retaining staff. Its flexibility and autonomy are a perfect match for the needs of agents and employees!",
+        quote: "Taszid did a phenomenal job bringing my vision to life. His creativity, professionalism, and punctuality are outstanding. He designed FIZCLO’s website with exceptional quality and attention to detail.",
+        name: "Mohammad Affan",
+        role: "Founder",
+        company: "FIZCLO",
+        logo: "/images/testimonials/fiz.png "
+      },
+      {
+        quote: "Taszid excels in product design, transforming complex ideas into intuitive, user-friendly solutions. His creativity, attention to detail, and collaboration make him a valuable asset to any team.",
+        name: "Salman A Rahman",
+        role: "Founder",
+        company: "HITH Foundation",
+        logo: "/images/testimonials/hith.png" 
+      },
+      
+      {
+        quote: "Taszid is the man who understands the assignment with just a few instructions. That makes working with him super efficient and effective. You simply tell him the vision you have and he turns it into a reality effortlessly. ",
+        name: "Sajid Hossain",
+        role: "CPO",
+        company: "Profyl.ai",
+        logo: "/images/testimonials/profyl.png" 
+      },
+      {
+        quote: "Taszid is an excellent and very experienced guy for any project. He is a great designer and developer. He is also a great team member. He is a great guy to work with.",
         name: "Shahriar Islam Shojeb",
         role: "CEO and Founder",
-        company: "Algorizin"
+        company: "Profyl.ai",
+        logo: "/images/testimonials/profyl.png" 
       },
       {
-        quote: "Taszid is an excellent guy for attracting and retaining staff. Its flexibility and autonomy are a perfect match for the needs of agents and employees!",
+        quote: "Taszid was a great asset to my team",
         name: "Saber Ali",
         role: "CEO and Founder",
-        company: "Algorizin"
-      },
-      // Duplicate the first 3 testimonials to make 6 total
-      {
-        quote: "Taszid is an excellent guy for attracting and retaining staff. Its flexibility and autonomy are a perfect match for the needs of agents and employees!",
-        name: "Siam Hossain",
-        role: "CEO and Founder",
-        company: "Algorizin"
-      },
-      {
-        quote: "Taszid is an excellent guy for attracting and retaining staff. Its flexibility and autonomy are a perfect match for the needs of agents and employees!",
-        name: "Shahriar Islam Shojeb",
-        role: "CEO and Founder",
-        company: "Algorizin"
-      },
-      {
-        quote: "Taszid is an excellent guy for attracting and retaining staff. Its flexibility and autonomy are a perfect match for the needs of agents and employees!",
-        name: "Saber Ali",
-        role: "CEO and Founder",
-        company: "Algorizin"
+        company: "SquidX",
+        logo: "/images/testimonials/squidx.png" 
       }
       
     // ... rest of the testimonials array ...
@@ -134,9 +134,9 @@ const Testimonials = () => {
                     <p className="text-sm text-[#999]">{testimonial.role}</p>
                   </div>
                   <img 
-                    src="/images/algorizin-logo.png" 
+                    src={testimonial.logo} 
                     alt={testimonial.company}
-                    className="h-6 w-6 object-contain"
+                    className="h-6 w-6 object-contain rounded-full"
                   />
                 </div>
               </div>
