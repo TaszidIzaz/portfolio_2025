@@ -12,6 +12,7 @@ import WorkDetail from "./pages/WorkDetail";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/layout/Layout";
 import { HelmetProvider } from 'react-helmet-async';
+import { Analytics } from '@vercel/analytics/react';
 
 const queryClient = new QueryClient();
 
@@ -31,12 +32,14 @@ function App() {
                 <Route path="*" element={<NotFound />} />
               </Route>
             </Routes>
+            <Analytics />
             <Toaster />
             <Sonner />
           </BrowserRouter>
         </TooltipProvider>
       </QueryClientProvider>
     </HelmetProvider>
+    
   );
 }
 
