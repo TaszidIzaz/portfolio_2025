@@ -43,7 +43,7 @@ const Footer = () => {
         
         <div className="flex justify-between items-center max-w-screen-xl mx-auto my-0 pt-3 pb-8 px-16 max-sm:flex-wrap max-sm:gap-y-8 max-sm:gap-x-12 max-sm:justify-center">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/taszid-izaz/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xl font-medium text-[#181818] hover:opacity-80 transition-opacity"
@@ -52,7 +52,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://dribbble.com"
+            href="https://dribbble.com/TaszidI"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xl font-medium text-[#181818] hover:opacity-80 transition-opacity"
@@ -61,7 +61,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://twitter.com"
+            href="https://x.com/TaszidI"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xl font-medium text-[#181818] hover:opacity-80 transition-opacity"
@@ -70,7 +70,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://behance.net"
+            href="https://www.behance.net/taszidizaz"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xl font-medium text-[#181818] hover:opacity-80 transition-opacity"

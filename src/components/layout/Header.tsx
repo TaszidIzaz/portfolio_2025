@@ -343,7 +343,7 @@ const Header = () => {
               </button>
               <div className="flex flex-col gap-6 items-center mt-8">
                 <a
-                  href="mailto:contact@example.com"
+                  href="mailto:taszid.nahi@gmail.com"
                   className="text-gray-500 hover:text-black transition-colors"
                 >
                   Email
@@ -357,7 +357,7 @@ const Header = () => {
                   Read.cv
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/taszid-izaz/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-500 hover:text-black transition-colors"
@@ -365,7 +365,7 @@ const Header = () => {
                   LinkedIn
                 </a>
                 <a
-                  href="https://dribbble.com"
+                  href="https://dribbble.com/TaszidI"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-500 hover:text-black transition-colors"
