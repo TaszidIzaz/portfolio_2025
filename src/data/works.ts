@@ -61,10 +61,9 @@ Without a streamlined system in place, students often resort to unreliable sourc
         content: `The goal was to design an intuitive and scalable platform that:
 
 ✔ Simplifies the end-to-end OPT self-employment process.
-✔ Ensures full USCIS compliance by integrating automated document generation and legal guidance.
+✔ Ensures USCIS compliance by integrating automated document generation and legal guidance.
 ✔ Provides a clear, structured pathway to help users register and manage their self-employment efficiently.
 ✔ Incorporates expert consultations to guide students through legal and financial complexities.
-✔ Implements a strategic revenue model while maintaining accessibility for international students.
 
 The platform needed to balance ease of use, legal accuracy, and commercial sustainability, making it a game-changer in the legal tech and immigration space.`
       },
@@ -73,10 +72,8 @@ The platform needed to balance ease of use, legal accuracy, and commercial susta
         content: `To bring this vision to life, I led the product design and UX research, ensuring that every aspect of the platform was built for clarity, efficiency, and compliance. Key initiatives included:
 
   • End-to-End User Experience Design: Crafted a seamless and self-guided onboarding process with step-by-step assistance, reducing friction and confusion
-  • Automated Document Generation: Integrated auto-populated legal documents to streamline compliance and minimize user errors
   • Real-Time Status Tracking: Developed a dashboard that provides students with updates on their business formation progress, next steps, and compliance status
   • Expert Consultation Access: Built a booking system that allows students to connect with legal advisors and mentors directly through the platform
-  • Strategic Monetization Model: Implemented a tiered payment system—offering free initial guidance while monetizing expert consultations and premium services
   • Optimized for Accessibility & Growth: Designed a mobile-friendly, scalable system to accommodate the increasing number of users across different regions`
       },
       result: {
@@ -84,7 +81,7 @@ The platform needed to balance ease of use, legal accuracy, and commercial susta
         content: `The platform saw significant adoption and revenue growth, proving its effectiveness in addressing a critical need.
 
 • Increased platform adoption, successfully onboarding hundreds of international students in the first few months
-• Helped users establish legally compliant self-employment businesses, leading to an impressive approval rate
+• Helped users establish legally compliant self-employment businesses, leading to an increased approval rate
 • Strengthened user trust and engagement, positioning Algorizin as a leading solution for self-employed OPT students
 
 By transforming a once-complicated process into an accessible, automated, and compliant solution, Algorizin OPT has empowered thousands of students to take control of their career paths—without the fear of immigration risks.`
@@ -285,68 +282,70 @@ The platform transformation established FIZCLO as a leading example of AI-powere
     ],
     industry: ["E-commerce", "Retail", "Fashion Tech"],
     liveUrl: "https://fizclo.com",
-    content: [
-      {
-        type: 'text',
-        content: 'Generic Shopping Experience Challenge',
-        index: 1
-      },
-      {
-        type: 'image',
-        content: '/images/works/fiz1.jpg',
-        index: 2
-      },
-      {
-        type: 'image',
-        content: '/images/works/fiz2.jpg',
-        index: 3
-      },
-      {
-        type: 'image',
-        content: '/images/works/fiz3.jpg',
-        index: 4
-      },
-      {
-        type: 'text',
-        content: 'Building an AI-Powered Shopping Experience',
-        index: 5
-      },
-      {
-        type: 'image',
-        content: '/images/works/fiz4.jpg',
-        index: 6
-      },
-      {
-        type: 'image',
-        content: '/images/works/fiz5.jpg',
-        index: 7
-      },
-      {
-        type: 'image',
-        content: '/images/works/fiz6.jpg',
-        index: 8
-      },
-      {
-        type: 'text',
-        content: 'Comprehensive E-commerce Transformation',
-        index: 9
-      },
-      {
-        type: 'image',
-        content: '/images/works/fiz7.jpg',
-        index: 10
-      },
-      {
-        type: 'image',
-        content: '/images/works/fiz8.jpg',
-        index: 11
-      },
-      {
-        type: 'image',
-        content: '/images/works/fiz9.jpg',
-        index: 12
-      }
-    ]
+
+    content: [/* ... content blocks ... */]
+    // content: [
+    //   {
+    //     type: 'text',
+    //     content: 'Generic Shopping Experience Challenge',
+    //     index: 1
+    //   },
+    //   {
+    //     type: 'image',
+    //     content: '/images/works/fiz1.jpg',
+    //     index: 2
+    //   },
+    //   {
+    //     type: 'image',
+    //     content: '/images/works/fiz2.jpg',
+    //     index: 3
+    //   },
+    //   {
+    //     type: 'image',
+    //     content: '/images/works/fiz3.jpg',
+    //     index: 4
+    //   },
+    //   {
+    //     type: 'text',
+    //     content: 'Building an AI-Powered Shopping Experience',
+    //     index: 5
+    //   },
+    //   {
+    //     type: 'image',
+    //     content: '/images/works/fiz4.jpg',
+    //     index: 6
+    //   },
+    //   {
+    //     type: 'image',
+    //     content: '/images/works/fiz5.jpg',
+    //     index: 7
+    //   },
+    //   {
+    //     type: 'image',
+    //     content: '/images/works/fiz6.jpg',
+    //     index: 8
+    //   },
+    //   {
+    //     type: 'text',
+    //     content: 'Comprehensive E-commerce Transformation',
+    //     index: 9
+    //   },
+    //   {
+    //     type: 'image',
+    //     content: '/images/works/fiz7.jpg',
+    //     index: 10
+    //   },
+    //   {
+    //     type: 'image',
+    //     content: '/images/works/fiz8.jpg',
+    //     index: 11
+    //   },
+    //   {
+    //     type: 'image',
+    //     content: '/images/works/fiz9.jpg',
+    //     index: 12
+    //   }
+    // ]
   },
 
   {
