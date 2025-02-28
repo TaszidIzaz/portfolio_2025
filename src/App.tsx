@@ -13,6 +13,7 @@ import NotFound from "./pages/NotFound";
 import Layout from "./components/layout/Layout";
 import { HelmetProvider } from 'react-helmet-async';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const queryClient = new QueryClient();
 
@@ -33,13 +34,13 @@ function App() {
               </Route>
             </Routes>
             <Analytics />
+            <SpeedInsights />
             <Toaster />
             <Sonner />
           </BrowserRouter>
         </TooltipProvider>
       </QueryClientProvider>
     </HelmetProvider>
-    
   );
 }
 
