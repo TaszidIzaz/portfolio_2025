@@ -11,13 +11,15 @@ interface SEOProps {
 const Head = ({ 
   title = "Taszid Izaz - Freelance Product Designer and Developer",
   description = "Portfolio of Taszid Izaz, showcasing innovative work in product design, AI integration, and full-stack development",
-  image = "/images/og-image.jpg",
+  image = "/tz.ico",
   type = "website",
-  url = "https://taszid.com"
+  url = "https://taszidizaz.com"
 }: SEOProps) => {
   return (
     <Helmet>
       <title>{title}</title>
+      <link rel="icon" href="/tz.ico" />
+      <link rel="icon" href="/tz.ico" />
       <meta name="description" content={description} />
       
       {/* Open Graph */}

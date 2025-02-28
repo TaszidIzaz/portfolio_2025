@@ -132,7 +132,7 @@ const Hero2 = () => {
             </span>
           </h1>
     
-          {/* Scroll Indicator */}
+          {/* Scroll Indicator
           <div className="absolute mt-8 mb-32">
             <div ref={scrollIconRef} className="flex items-center gap- mt-60 -ml-10">
               <svg
@@ -148,12 +148,16 @@ const Hero2 = () => {
                   fill="currentColor"
                 />
               </svg>
-              <span className="font-['Mono45_Headline'] text-[16px] text-[#181818]">
+              <span className="font-['Mono45_Headline'] text-[16px] text-[#181818] max-md:text-[14px]"
+                    style={{ 
+                      fontFamily: "'Mono45 Headline', 'Courier New', monospace",
+                      letterSpacing: "0.05em"
+                    }}>
                 SCROLL DOWN
               </span>
             
             </div>
-          </div>
+          </div> */}
         </div>  
     
           {/* Added image section */}
@@ -187,9 +191,13 @@ const Hero2 = () => {
                     <text
                       transform="translate(33.2726 -0.000183105)"
                       fill="currentColor"
-                      style={{ whiteSpace: "pre" }}
-                      fontFamily="Mono45 Headline"
+                      style={{ 
+                        whiteSpace: "pre",
+                        fontFamily: "'Mono45 Headline', 'Courier New', monospace",
+                        letterSpacing: "0.05em"
+                      }}
                       fontSize="16"
+                      className="tracking-wider font-['Mono45_Headline'] max-md:text-[14px]"
                     >
                       <tspan x="0" y="16.3516">ABOUT ME</tspan>
                     </text>

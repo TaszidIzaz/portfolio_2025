@@ -20,6 +20,13 @@ const Testimonials = () => {
         logo: "/images/testimonials/fiz.png "
       },
       {
+        quote: "Taszid Izaz is a godsent designer. The amount of dedication he brings to every project inspires everyone to move faster. His efficiency pushes the creative heads of the team forward.",
+        name: "Shahriar Islam Shojeb",
+        role: "CEO and Founder",
+        company: "Profyl.ai",
+        logo: "/images/testimonials/profyl.png" 
+      },
+      {
         quote: "Taszid excels in product design, transforming complex ideas into intuitive, user-friendly solutions. His creativity, attention to detail, and collaboration make him a valuable asset to any team.",
         name: "Salman A Rahman",
         role: "Founder",
@@ -29,18 +36,12 @@ const Testimonials = () => {
       
       {
         quote: "Taszid is the man who understands the assignment with just a few instructions. That makes working with him super efficient and effective. You simply tell him the vision you have and he turns it into a reality effortlessly. ",
-        name: "Sajid Hossain",
+        name: "Sajid Chowdhury",
         role: "CPO",
         company: "Profyl.ai",
         logo: "/images/testimonials/profyl.png" 
       },
-      {
-        quote: "Taszid is an excellent and very experienced guy for any project. He is a great designer and developer. He is also a great team member. He is a great guy to work with.",
-        name: "Shahriar Islam Shojeb",
-        role: "CEO and Founder",
-        company: "Profyl.ai",
-        logo: "/images/testimonials/profyl.png" 
-      },
+      
       {
         quote: "Taszid was a great asset to my team",
         name: "Saber Ali",

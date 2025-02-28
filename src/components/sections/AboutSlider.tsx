@@ -130,8 +130,8 @@ const AboutSlider = () => {
   }, []);
 
   return (
-    <div className="relative bg-[#181818]">
-      <div className=" absolute inset-0 w-screen left-1/2 -translate-x-1/2 bg-[#181818]" />
+    <div className="relative bg-[#181818] rounded-[5px]">
+      <div className="absolute inset-0 w-screen left-1/2 -translate-x-1/2 bg-[#181818] rounded-[5px]" />
       <section 
         ref={sectionRef} 
         className="relative text-white py-[60px] max-md:py-10"

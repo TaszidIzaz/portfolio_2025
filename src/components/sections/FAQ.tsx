@@ -6,7 +6,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "What are your pricings?",
-      answer: "My pricing varies depending on the complexity and scope of the project. Landing pages start at as low as $499, while more extensive projects like full website design, product UI/UX, or branding are priced based on requirements."
+      answer: "My pricing varies depending on the complexity and scope of the project. Landing pages start at just $499, while more extensive projects like Full Website Design, Product Design, or Interactive Prototyping are priced based on requirements."
     },
     {
       question: "What tools do you have expertise?",
@@ -30,7 +30,7 @@ const FAQ = () => {
     },
     {
       question: "Can you help with branding and identity design?",
-      answer: "Yes! I have a experienced team that can help design logos, visual identities, and brand guidelines that align with a company’s vision and values."
+      answer: "Yes! I have an experienced team that can help design logos, visual identities, and brand guidelines that align with a company’s vision and values."
     },
     {
         question: "Are you open to full-time roles?",
