@@ -29,8 +29,8 @@ const FAQ = () => {
       answer: "I frequently use Jitter for motion design and was recognized as one of 11 Jitter Experts on Contra. I create smooth animations that enhance user interactions and brand storytelling."
     },
     {
-      question: "Can you help with branding and identity design?",
-      answer: "Yes! I have an experienced team that can help design logos, visual identities, and brand guidelines that align with a company’s vision and values."
+      question: "Do you have experience in Interactive Prototyping?",
+      answer: "Yes! Over the years i have worked on more than 15 Interactive prototypes for my clients. I can assure you my prototyping skills are on par with few of the best in the industry."
     },
     {
         question: "Are you open to full-time roles?",
