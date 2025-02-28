@@ -128,8 +128,8 @@ const Hero = () => {
             className="text-[52px] font-bold leading-[62.4px] tracking-[-0.52px] text-[#181818] mb-[60px] 
               max-lg:text-[42px] max-lg:leading-[1.3] max-md:text-[36px] max-sm:text-[32px] max-sm:leading-[1.3]"
           >
-            <span className="max-sm:hidden">{'\u00A0'.repeat(18)}</span>
-            Helping New & Ambitious Founders Bring Their Ideas to Life with Speed, Scale & Impact as a{' '}
+            <span className="max-sm:hidden">{'\u00A0'.repeat(35)}</span>
+            Helping Ambitious Founders Bring Their Ideas to Life with Speed, Scale & Impact as a{' '}
             <span className="inline-block relative">
               <span className="inline-block h-[62.4px] overflow-hidden relative top-[14px] left-[6px] max-sm:h-[42px] max-sm:top-[8px] max-sm:left-[4px]">
                 <span ref={titleRef} className="inline-block font-normal">

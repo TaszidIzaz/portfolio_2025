@@ -8,28 +8,28 @@ const Testimonials = () => {
     {
         quote: "Taszid blends creativity with strategic design thinking, delivering functional, user-centered experiences. His proactive approach, adaptability, and teamwork make him an invaluable addition to any organization.",
         name: "Toukir Tasnim Chowdhury",
-        role: "Product Manager",
+        role: "Product Manager @Algorizin",
         company: "Algorizin",
         logo: "/images/testimonials/algorizin.png" 
       },
       {
         quote: "Taszid did a phenomenal job bringing my vision to life. His creativity, professionalism, and punctuality are outstanding. He designed FIZCLO’s website with exceptional quality and attention to detail.",
         name: "Mohammad Affan",
-        role: "Founder",
+        role: "Founder @FIZCLO",
         company: "FIZCLO",
         logo: "/images/testimonials/fiz.png "
       },
       {
         quote: "Taszid Izaz is a godsent designer. The amount of dedication he brings to every project inspires everyone to move faster. His efficiency pushes the creative heads of the team forward.",
         name: "Shahriar Islam Shojeb",
-        role: "CEO and Founder",
+        role: "CEO and Founder @Profyl.ai",
         company: "Profyl.ai",
         logo: "/images/testimonials/profyl.png" 
       },
       {
         quote: "Taszid excels in product design, transforming complex ideas into intuitive, user-friendly solutions. His creativity, attention to detail, and collaboration make him a valuable asset to any team.",
         name: "Salman A Rahman",
-        role: "Founder",
+        role: "Founder @HITH",
         company: "HITH Foundation",
         logo: "/images/testimonials/hith.png" 
       },
@@ -37,7 +37,7 @@ const Testimonials = () => {
       {
         quote: "Taszid is the man who understands the assignment with just a few instructions. That makes working with him super efficient and effective. You simply tell him the vision you have and he turns it into a reality effortlessly. ",
         name: "Sajid Chowdhury",
-        role: "CPO",
+        role: "CPO @Profyl.ai",
         company: "Profyl.ai",
         logo: "/images/testimonials/profyl.png" 
       },
@@ -45,7 +45,7 @@ const Testimonials = () => {
       {
         quote: "Taszid was a great asset to my team",
         name: "Saber Ali",
-        role: "CEO and Founder",
+        role: "CEO and Founder @SquidX",
         company: "SquidX",
         logo: "/images/testimonials/squidx.png" 
       }
@@ -155,4 +155,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default Testimonials; 
