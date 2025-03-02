@@ -35,12 +35,11 @@ const Works = () => {
         {works.map((work, index) => (
           <div key={work.id} className="space-y-6">
             <Link to={`/works/${work.id}`} className="block">
-              <div className="group relative h-[500px] max-md:h-[400px] overflow-hidden cursor-pointer bg-black/5">
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50 z-10 mix-blend-multiply" />
+              <div className="group relative h-[500px] max-md:h-[400px] overflow-hidden cursor-pointer">
                 <img 
                   src={work.image} 
                   alt={work.title}
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
                 />
                 {/* Arrow Icon */}
                 <div className="absolute top-10 right-10 z-20 opacity-0 translate-x-10 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500">
@@ -56,7 +55,7 @@ const Works = () => {
                 <div className="absolute bottom-0 left-0 right-0 p-10 z-20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
                   <div className="flex gap-3 flex-wrap">
                     {work.tags?.map((tag, tagIndex) => (
-                      <span key={tagIndex} className="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm">
+                      <span key={tagIndex} className="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm border border-white/30">
                         {tag}
                       </span>
                     ))}

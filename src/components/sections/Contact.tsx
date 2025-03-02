@@ -41,10 +41,10 @@ const Contact = () => {
   return (
     <section
       ref={sectionRef}
-      className="bg-[#181818] relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] py-[55px]"
+      className="bg-[#181818] relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] py-[55px] px-8"
       id="contact"
     >
-      <div className="max-w-[1251px] mx-auto my-0 px-0 max-md:px-10 max-sm:px-5">
+      <div className="max-w-[1251px] mx-auto my-0 px-8 max-md:px-10 max-sm:px-5">
         {/* Header and Contact Info */}
         <div className="mb-20">
           <div className="overflow-hidden mb-20">

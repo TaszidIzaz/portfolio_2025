@@ -35,8 +35,11 @@ const Footer = () => {
     <div className="relative" ref={container}>
       <footer className="bg-white py-10 w-full">
         <h2 
-          className="footer-name font-black leading-none text-[#181818] text-center mb-10 whitespace-nowrap"
-          style={{ fontSize: "16vw" }}
+          className="footer-name font-black leading-none text-[#181818] text-center mb-10 whitespace-nowrap max-w-[1600px] mx-auto px-2"
+          style={{ 
+            fontSize: "clamp(40px, 16vw, 200px)",
+            width: "100%"
+          }}
         >
           Taszid Izaz
         </h2>
