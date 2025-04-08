@@ -349,6 +349,90 @@ The platform transformation established FIZCLO as a leading example of AI-powere
   },
 
   {
+    id: "hostlab",
+    title: "Enhancing Hostlab's Digital Concierge Experience through Engaging Visuals",
+    client: "Hostlab",
+    year: "2024",
+    description: {
+      overview: "Collaborated with Hostlab to elevate their Digital Concierge platform—a tool designed to minimize guest inquiries and boost revenue for short-term rental hosts—by creating compelling motion designs, interactive prototypes, and custom illustrations.",
+      situation: {
+        heading: "The Challenge",
+        content: `Hostlab aimed to introduce their innovative Digital Concierge platform, which offers features like:
+
+• No Downloads Required: Guests access information via a simple link or QR code.
+• Revenue Maximization: Hosts can upsell services such as early check-ins and bike rentals.
+• Video Tutorials: Hosts can upload appliance tutorials directly from their phones.
+• Direct Booking Promotion: Encourages repeat bookings by promoting hosts' websites and social profiles.
+
+To effectively showcase these features, especially at their upcoming conference in Dubai, Hostlab needed:
+
+• Engaging Motion Designs: To vividly demonstrate platform functionalities.
+• Interactive Prototypes: For live, hands-on demonstrations to potential clients and partners.
+• Custom Illustrations: To clearly depict website features and enhance user understanding.`
+      },
+      task: {
+        heading: "The Task",
+        content: `Develop a suite of visual assets that:
+
+✔ Clearly Communicate Platform Features: Through intuitive motion designs and illustrations.
+✔ Engage Conference Attendees: With interactive prototypes that provide a tangible experience of the platform.
+✔ Maintain Brand Consistency: Ensuring all visuals align with Hostlab's branding and resonate with their target audience.`
+      },
+      action: {
+        heading: "The Action",
+        content: `• Motion Design for Product Demo: Crafted dynamic animations to showcase key features like the in-concierge custom shop and video tutorial uploads, making complex functionalities easily understandable.
+
+• Interactive Prototyping: Developed a hands-on prototype of the Digital Concierge platform, enabling conference attendees in Dubai to experience its seamless functionality firsthand.
+
+• Custom Illustrations: Designed bespoke illustrations highlighting features such as QR code access and direct booking promotions, enhancing the website's visual appeal and user comprehension.`
+      },
+      result: {
+        heading: "The Result",
+        content: `
+        The visual enhancements significantly contributed to:
+
+✔ Successful Conference Engagement: The interactive prototype captivated attendees in Dubai, leading to increased interest and potential partnerships.
+
+✔ Improved User Understanding: Motion designs and illustrations effectively communicated platform features, resulting in a 30% reduction in user inquiries.
+
+✔ Strengthened Brand Presence: Cohesive and professional visuals reinforced Hostlab's position as an innovator in the hospitality tech industry.
+
+By transforming Hostlab's Digital Concierge platform into an engaging and visually compelling experience, positioned Hostlab for greater market success.`
+      }
+    },
+    image: "/images/works/hosthero.jpg",
+    images: [
+      "/images/works/hosthero.jpg",
+      "/images/works/hostlab1.png",
+      "/images/works/hostlab2.png",
+      "/images/works/hostlab3.jpg",
+      "/images/works/hostlab4.jpg",
+      "/images/works/hostlab5.jpg",
+      "/images/works/hostlab6.jpg",
+      "/images/works/hostlab7.jpg",
+      "/images/works/hostlab8.png",
+      "/images/works/hostlab9.png",
+    ],
+    tags: ["Motion Design", "Interactive Prototyping", "Illustration"],
+    stack: [
+      {
+        name: "Figma",
+        icon: "/icons/Figma.svg"
+      },
+      {
+        name: "After Effects",
+        icon: "/icons/aftereffects.svg"
+      },
+      {
+        name: "Jitter",
+        icon: "/icons/jitter.svg"
+      }
+    ],
+    industry: ["Hospitality Tech", "Short-Term Rentals"],
+    liveUrl: "https://hostlab.ai",
+    content: [/* ... content blocks ... */]
+  },
+  {
     id: "printee",
     title: "Printee – AI-Enhanced Print-on-Demand Made Simple",
     client: "Printee",
@@ -380,16 +464,12 @@ The platform transformation established FIZCLO as a leading example of AI-powere
     tags: ["Print-on-Demand", "AI Integration", "E-commerce", "Product Design"],
     stack: [
       {
-        name: "React",
-        icon: "/icons/react.svg"
+        name: "Figma",
+        icon: "/icons/Figma.svg"
       },
       {
-        name: "Node.js",
-        icon: "/icons/nodejs.svg"
-      },
-      {
-        name: "AWS",
-        icon: "/icons/aws.svg"
+        name: "ClickUp",
+        icon: "/icons/Clickup.svg"
       }
     ],
     industry: ["E-commerce", "Print-on-Demand", "Custom Manufacturing"],
