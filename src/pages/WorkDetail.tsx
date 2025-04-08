@@ -6,6 +6,7 @@ import WorkDetailContent from "@/components/sections/WorkDetailContent";
 import ProtectedWorkContent from "@/components/sections/ProtectedWorkContent";
 import Contact from "@/components/sections/Contact";
 import { getWork } from "@/data/works";
+import OptimizedImage from "../components/ui/OptimizedImage";
 
 const WorkDetail = () => {
   const { workId } = useParams<{ workId: string }>();

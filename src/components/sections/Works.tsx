@@ -2,6 +2,7 @@
 import WorkCard from "../ui/WorkCard";
 import { Link } from 'react-router-dom';
 import { works } from "@/data/works";
+import OptimizedImage from "../ui/OptimizedImage";
 
 const Works = () => {
   return (
@@ -36,7 +37,7 @@ const Works = () => {
           <div key={work.id} className="space-y-6">
             <Link to={`/works/${work.id}`} className="block">
               <div className="group relative h-[500px] max-md:h-[400px] overflow-hidden cursor-pointer">
-                <img 
+                <OptimizedImage 
                   src={work.image} 
                   alt={work.title}
                   className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
