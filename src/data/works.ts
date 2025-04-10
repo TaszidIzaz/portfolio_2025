@@ -15,7 +15,7 @@ export interface WorkDetails {
   title: string;
   client: string;
   year: string;
-  isPrivate?: boolean; // Add this line
+  isPrivate?: boolean;
   description: {
     overview: string;
     situation: SectionContent;
@@ -29,7 +29,12 @@ export interface WorkDetails {
     content: string;
     index: number;
   }[];
-
+  testimonial?: {
+    quote: string;
+    name: string;
+    position?: string;
+    avatar?: string;
+  };
   image: string;
   tags: string[];
   stack?: TechStack[];
@@ -40,6 +45,12 @@ export interface WorkDetails {
 export const works: WorkDetails[] = [
   {
     id: "algorizin-opt",
+    testimonial: {
+      quote: "Taszid blends creativity with strategic design thinking, delivering functional, user-centered experiences. His proactive approach, adaptability, and teamwork make him an invaluable addition to any organization.",
+      name: "Toukir Tasnim Chowdhury",
+      position: "Product Manager at Algorizin ",
+      avatar: "/images/testimonials/algorizin.png"
+    },
     title: "Algorizin OPT – Empowering International Students with Self-Employment",
     client: "Algorizin",
     year: "2024",
@@ -118,6 +129,12 @@ By transforming a once-complicated process into an accessible, automated, and co
   },
   {
     id: "profyl-ai",
+    testimonial: {
+      quote: "Taszid did a phenomenal job bringing my vision to life. His creativity, professionalism, and punctuality are outstanding. He designed FIZCLO’s website with exceptional quality and attention to detail.",
+      name: "Shahriar Islam Shojeb",
+      position: "CEO and Founder at Profyl.ai ",
+      avatar: "/images/testimonials/profyl.png"
+    },
     title: "Profyl.ai – Smarter, Faster AI-Powered Hiring",
     client: "Profyl.ai",
     year: "2024",
@@ -199,6 +216,12 @@ By leveraging AI and automation, Profyl.ai is redefining the future of recruitme
   },
   {
     id: "fizclo-ecommerce",
+    testimonial: {
+      quote: "Taszid did a phenomenal job bringing my vision to life. His creativity, professionalism, and punctuality are outstanding. He designed FIZCLO’s website with exceptional quality and attention to detail.",
+      name: "Mohammad Affan",
+      position: "Founder at FIZCLO ",
+      avatar: "/images/testimonials/fiz.png"
+    },
     title: "FIZCLO – AI-Driven Personalization for E-Commerce Growth",
     client: "FIZCLO",
     year: "2025",
@@ -269,16 +292,13 @@ The platform transformation established FIZCLO as a leading example of AI-powere
     stack: [
       {
         name: "Vue.js",
-        icon: "/icons/vue.svg"
+        icon: "/icons/Figma.svg"
       },
       {
         name: "TensorFlow",
-        icon: "/icons/tensorflow.svg"
+        icon: "/icons/Clickup.svg"
       },
-      {
-        name: "AWS",
-        icon: "/icons/aws.svg"
-      }
+      
     ],
     industry: ["E-commerce", "Retail", "Fashion Tech"],
     liveUrl: "https://fizclo.com",
@@ -350,6 +370,12 @@ The platform transformation established FIZCLO as a leading example of AI-powere
 
   {
     id: "hostlab",
+    testimonial: {
+      quote: "Taszid is an excellent product designer who worked on Hostlab with great attention to detail. He’s highly flexible, responsive, and committed to delivering top-quality work. Highly recommend his expertise!",
+      name: " Faizan Ahmed",
+      position: "Founder at Hostlab",
+      avatar: "/images/testimonials/hostlab.png"
+    },
     title: "Enhancing Hostlab's Digital Concierge Experience through Engaging Visuals",
     client: "Hostlab",
     year: "2024",
@@ -434,8 +460,15 @@ By transforming Hostlab's Digital Concierge platform into an engaging and visual
   },
   {
     id: "printee",
+    testimonial: {
+      quote: "Working with Taszid on our confidential project was exceptional. His technical expertise and innovative approach helped us create a platform that exceeded our expectations. While details remain under NDA, his contribution was invaluable to our success.",
+      name: "Alex Chen",
+      position: "CTO at Printee",
+      avatar: "/images/testimonials/printee.png"
+    },
     title: "Printee – AI-Enhanced Print-on-Demand Made Simple",
     client: "Printee",
+    
     year: "2024",
     isPrivate: true,
     description: {

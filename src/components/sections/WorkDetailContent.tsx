@@ -120,16 +120,45 @@ const WorkDetailContent = ({ workId }: WorkDetailContentProps) => {
         <div>
           <h1 className="text-5xl font-bold mb-8 leading-tight max-md:text-4xl max-sm:text-4xl">{work.title}</h1>
           <p className="text-xl text-gray-600 mb-8">{work.description.overview}</p>
+          
+          {/* Live URL Link */}
           {work.liveUrl && (
             <a 
               href={work.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center text-black hover:opacity-70 transition-opacity"
+              className="inline-flex items-center text-black hover:opacity-70 transition-opacity mb-10"
             >
               View live website
               <span className="ml-2">→</span>
             </a>
+          )}
+          
+          {/* Client Testimonial Section */}
+          {work.testimonial && (
+            <div className="mt-0 bg-gray-50 p-8 rounded-lg border border-gray-100">
+              <div className="flex items-start gap-4">
+                {work.testimonial.avatar && (
+                  <img 
+                    src={work.testimonial.avatar} 
+                    alt={work.testimonial.name} 
+                    className="w-16 h-16 rounded-full object-cover"
+                  />
+                )}
+                <div>
+                  <p className="text-lg italic mb-4">"{work.testimonial.quote}"</p>
+                  <div className="flex items-center">
+                    <p className="font-medium">{work.testimonial.name}</p>
+                    {work.testimonial.position && (
+                      <>
+                        <span className="mx-2">•</span>
+                        <p className="text-gray-600">{work.testimonial.position}</p>
+                      </>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
           )}
         </div>
       </div>
