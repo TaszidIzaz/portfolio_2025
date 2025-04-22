@@ -86,7 +86,7 @@ const Header = () => {
               </div>
             </a>
             <a
-              href="https://www.dropbox.com/scl/fi/5t1ymiouk73yapagiciz7/Taszid-Resume-2025.pdf?rlkey=yjuju5uf6ul5zo8yvems0z4os&st=gfbhm012&dl=0"
+              href="https://www.dropbox.com/scl/fi/6dhy1cfj6g1av0iyxq8ro/Taszid-Resume-2025.pdf?rlkey=vspcpt7vkry4sarc5wdjanhx0&st=65gmtm4o&dl=0"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-500 hover:text-black transition-colors group"
