@@ -232,31 +232,22 @@ const Hero = () => {
         ref={videoRef}
         className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[800px] max-md:h-[500px] px-20 pb-10 max-md:px-10 max-sm:px-5 bg-transparent"
       >
-        <div 
-          onClick={() => setIsVideoOpen(true)} 
-          className="relative cursor-pointer group h-full"
-        >
+        <div className="relative h-full">
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="w-full h-full object-cover rounded-lg"
+            className=" h-full w-full object-cover rounded-lg"
           >
-            <source src="Media/ommo-reel.mp4" type="video/mp4" />
-            <source src="/Media/ommo-reel.mp4" type="video/mp4" />
+            <source src="Media/Showreel.mp4" type="video/mp4" />
+            <source src="/Media/Showreel.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="absolute inset-0 bg-black/20 rounded-lg group-hover:bg-black/30 transition-colors" />
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-            <svg className="w-16 h-16 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </div>
         </div>
       </div>
 
+      {/* Remove the Video Modal section since we don't need it anymore */}
       {/* Video Modal */}
       {isVideoOpen && (
         <div 
@@ -269,8 +260,8 @@ const Hero = () => {
               controls
               className="w-full h-full object-cover rounded-lg"
             >
-              <source src="Media/ommo-reel.mp4" type="video/mp4" />
-              <source src="/Media/ommo-reel.mp4" type="video/mp4" />
+              <source src="Media/Showreel.mp4" type="video/mp4" />
+              <source src="/Media/Showreel.mp4" type="video/mp4" />
             </video>
             <button 
               onClick={() => setIsVideoOpen(false)}
