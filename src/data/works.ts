@@ -130,7 +130,7 @@ By transforming a once-complicated process into an accessible, automated, and co
   {
     id: "profyl-ai",
     testimonial: {
-      quote: "Taszid did a phenomenal job bringing my vision to life. His creativity, professionalism, and punctuality are outstanding. He designed FIZCLO’s website with exceptional quality and attention to detail.",
+      quote: "Taszid did a phenomenal job bringing my vision to life. His creativity, professionalism, and punctuality are outstanding. ",
       name: "Shahriar Islam Shojeb",
       position: "CEO and Founder at Profyl.ai ",
       avatar: "/images/testimonials/profyl.png"
@@ -461,7 +461,7 @@ By transforming Hostlab's Digital Concierge platform into an engaging and visual
   {
     id: "printee",
     testimonial: {
-      quote: "Working with Taszid on our confidential project was exceptional. His technical expertise and innovative approach helped us create a platform that exceeded our expectations. While details remain under NDA, his contribution was invaluable to our success.",
+      quote: "Working with Taszid on our project was exceptional. His technical expertise and innovative approach helped us create a platform that exceeded our expectations. While details remain under NDA, his contribution was invaluable to our success.",
       name: "Alex Chen",
       position: "CTO at Printee",
       avatar: "/images/testimonials/printee.png"
