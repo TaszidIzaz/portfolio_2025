@@ -508,7 +508,105 @@ By transforming Hostlab's Digital Concierge platform into an engaging and visual
     industry: ["E-commerce", "Print-on-Demand", "Custom Manufacturing"],
     liveUrl: "https://printee.co",
     content: [] // Empty content array for private project
-  }
+  },
+
+  {
+    id: "centered-data",
+    testimonial: {
+      quote: "Outstanding work on our brand identity. The attention to detail and strategic thinking behind every design element perfectly captured our vision for CenteredData.",
+      name: "CenteredData Team",
+      position: "CenteredData",
+      avatar: "/images/testimonials/cent.png"
+    },
+    title: "CenteredData – Building a Tech-Forward Brand Identity",
+    client: "CenteredData",
+    year: "2024",
+    description: {
+      overview: "Led the comprehensive brand identity development for CenteredData, a data-focused consultancy in the IT and analytics space. Created a minimalistic yet powerful visual identity system that communicates technical precision and expertise while maintaining approachability and authority in the tech consulting landscape.",
+      situation: {
+        heading: "Brand Identity Challenge",
+        content: `CenteredData needed a complete brand identity that would:
+
+• Stand out in the crowded tech consultancy space
+• Communicate technical expertise while maintaining approachability
+• Align with respected tech brands like Cloudflare and Google Cloud
+• Support various digital and print applications
+• Reflect their core value proposition of unified data solutions
+
+The challenge was to create a visual identity that would resonate with both technical decision-makers and business stakeholders while avoiding the typical enterprise solution aesthetic.`
+      },
+      task: {
+        heading: "Creating a Comprehensive Brand System",
+        content: `The project required developing a complete brand identity suite including:
+
+✔ Primary logo and brandmark with multiple variants
+✔ Modern, tech-forward color palette
+✔ Typography system with ITC Avant Garde Gothic Pro Demi
+✔ Brand narrative and logo meaning
+✔ Digital assets for LinkedIn and web presence
+✔ Icon set for navigation and contact points
+✔ Brand usage guidelines and specifications
+✔ Website background recommendations
+
+The solution needed to balance minimalism with meaningful symbolism while ensuring practical application across all touchpoints.`
+      },
+      action: {
+        heading: "Strategic Design Implementation",
+        content: `Led the end-to-end brand development process with a focus on strategic design thinking:
+
+• Research & Analysis: Studied minimalist cloud-tech branding to establish visual benchmarks
+• Logo Development: Created a brandmark representing data unification through geometric forms
+• Color System: Developed a sophisticated palette including:
+  - Primary dark tone (#223440)
+  - Blue grey accents (#8C9EAA, #6993AF)
+  - Soft UI elements (#C8D1D8)
+  - Clean white space (#FFFFFF)
+• Typography Integration: Implemented ITC Avant Garde Gothic Pro Demi for modern, geometric appeal
+• Motto Design: Crafted "Engineered to Inform. Unified to Perform." with strategic emphasis
+• Asset Creation: Produced comprehensive brand materials for digital and print applications`
+      },
+      result: {
+        heading: "Brand Impact & Deliverables",
+        content: `The brand identity system successfully delivered:
+
+• A memorable yet sophisticated visual identity system
+• Scalable vector formats for all brand assets
+• A cohesive color and typography system that communicates precision
+• Professional branding elements for digital platforms
+• Clear brand guidelines ensuring consistent application
+• A powerful brand narrative embedded in visual elements
+
+The new brand identity positioned CenteredData as a trusted, technically proficient consultant while maintaining approachability and modern appeal.`
+      }
+    },
+    image: "/images/works/centered-hero.png",
+    images: [
+      "/images/works/centered-hero.png",
+      "/images/works/centered1.jpg",
+      "/images/works/centered2.jpg",
+      "/images/works/centered3.jpg",
+      "/images/works/centered4.jpg",
+      "/images/works/centered5.jpg",
+      "/images/works/centered6.jpg",
+      "/images/works/centered7.jpg",
+      "/images/works/centered8.jpg",
+      "/images/works/centered9.jpg",
+    ],
+    tags: ["Brand Identity", "Logo Design", "Visual Design", "UI Design"],
+    stack: [
+      {
+        name: "Illustrator",
+        icon: "/icons/Illustrator.svg"
+      },
+      {
+        name: "Figma",
+        icon: "/icons/Figma.svg"
+      }
+    ],
+    industry: ["IT Consulting", "Data Analytics", "Technology"],
+    liveUrl: "https://centereddata.com",
+    content: [/* ... content blocks ... */]
+  },
 ];
 
 export const getWork = (id: string | undefined): WorkDetails | undefined => {
