@@ -94,6 +94,7 @@ const AboutSlider = () => {
         );
 
     // Slider animations
+    // Remove this duplicate block
     gsap.fromTo(row1Ref.current, 
       { x: '0', opacity: 1 },
       {
