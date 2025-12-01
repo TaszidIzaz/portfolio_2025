@@ -86,7 +86,7 @@ const Header = () => {
               </div>
             </a>
             <a
-              href="https://www.dropbox.com/scl/fi/6dhy1cfj6g1av0iyxq8ro/Taszid-Resume-2025.pdf?rlkey=vspcpt7vkry4sarc5wdjanhx0&st=65gmtm4o&dl=0"
+              href="https://www.dropbox.com/scl/fi/3uu7ungexxa1uusfh94hg/Taszid_Izaz_Resume_2025.pdf?rlkey=21f3t8cr252xr2oexdmvum08o&st=a5xioe4y&dl=0"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-500 hover:text-black transition-colors group"
@@ -112,7 +112,7 @@ const Header = () => {
                     className="transform transition-transform duration-300 group-hover:translate-x-[4px]"
                   >
                     <tspan x="30.5425" y="12.3516">
-                      read.cv
+                      Check Resume
                     </tspan>
                   </text>
                 </svg>

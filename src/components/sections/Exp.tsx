@@ -56,12 +56,29 @@ const Exp = () => {
           </div>
       
           <div className="space-y-8">
+
+            <div className="flex items-center py-8 border-b border-white/10">
+              <a href="https://www.unikostudio.co/" target="_blank" rel="noopener noreferrer" className="text-2xl font-semibold text-white hover:opacity-80 transition-opacity max-md:text-lg max-sm:text-base w-[200px]">
+                UNIKO
+              </a>
+              <div className="text-2xl text-white max-md:text-lg max-sm:text-base w-[300px]"> Web Designer </div>
+              <div className="text-2xl text-white/60 max-md:hidden ml-auto text-right"> October , 2025 - Present </div>
+            </div>
+
+            <div className="flex items-center py-8 border-b border-white/10">
+              <a href="https://polyuno.com/" target="_blank" rel="noopener noreferrer" className="text-2xl font-semibold text-white hover:opacity-80 transition-opacity max-md:text-lg max-sm:text-base w-[200px]">
+                Polyuno
+              </a>
+              <div className="text-2xl text-white max-md:text-lg max-sm:text-base w-[300px]">Product Designer/ Manager </div>
+              <div className="text-2xl text-white/60 max-md:hidden ml-auto text-right"> March, 2025 - November, 2025 </div>
+            </div>
+
             <div className="flex items-center py-8 border-b border-white/10">
               <a href="https://profyl.ai" target="_blank" rel="noopener noreferrer" className="text-2xl font-semibold text-white hover:opacity-80 transition-opacity max-md:text-lg max-sm:text-base w-[200px]">
                 Profyl.ai
               </a>
               <div className="text-2xl text-white max-md:text-lg max-sm:text-base w-[300px]">Founding Product Designer</div>
-              <div className="text-2xl text-white/60 max-md:hidden ml-auto text-right">September, 2024 - Present</div>
+              <div className="text-2xl text-white/60 max-md:hidden ml-auto text-right">September, 2024 - Present </div>
             </div>
 
             <div className="flex items-center py-8 border-b border-white/10">
