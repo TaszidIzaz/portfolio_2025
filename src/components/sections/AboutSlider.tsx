@@ -173,7 +173,7 @@ const AboutSlider = () => {
                 max-lg:text-[42px] max-md:text-[36px] max-sm:text-[32px] max-sm:leading-[1.3]"
             >
               <span className="max-sm:hidden">{'\u00A0'.repeat(38)}</span>
-              I'm Taszid, a product designer with 3 years of experience, crafting intuitive interactions. Currently a Product Designer at{' '}
+              I'm Taszid, a product designer with 4+ years of experience, crafting intuitive interactions. Currently a Product Designer at{' '}
               <a 
                 href="https://algorizin.com" 
                 target="_blank" 
