@@ -112,7 +112,7 @@ const Header = () => {
                     className="transform transition-transform duration-300 group-hover:translate-x-[4px]"
                   >
                     <tspan x="30.5425" y="12.3516">
-                      Check Resume
+                      Resume
                     </tspan>
                   </text>
                 </svg>
